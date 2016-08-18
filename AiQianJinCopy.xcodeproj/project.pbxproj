@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		094CEA831D65616F0095F820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEA821D65616F0095F820 /* main.m */; };
 		094CEA861D65616F0095F820 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEA851D65616F0095F820 /* AppDelegate.m */; };
-		094CEA891D65616F0095F820 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEA881D65616F0095F820 /* ViewController.m */; };
-		094CEA8C1D65616F0095F820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094CEA8A1D65616F0095F820 /* Main.storyboard */; };
 		094CEA8E1D65616F0095F820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094CEA8D1D65616F0095F820 /* Assets.xcassets */; };
 		094CEA911D65616F0095F820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094CEA8F1D65616F0095F820 /* LaunchScreen.storyboard */; };
 		094CEA9C1D65616F0095F820 /* AiQianJinCopyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEA9B1D65616F0095F820 /* AiQianJinCopyTests.m */; };
 		094CEAA71D65616F0095F820 /* AiQianJinCopyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAA61D65616F0095F820 /* AiQianJinCopyUITests.m */; };
+		59FD7A28C7DE0BD0B094B587 /* libPods-AiQianJinCopy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		094CEA821D65616F0095F820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		094CEA841D65616F0095F820 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		094CEA851D65616F0095F820 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		094CEA871D65616F0095F820 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		094CEA881D65616F0095F820 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		094CEA8B1D65616F0095F820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		094CEA8D1D65616F0095F820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094CEA901D65616F0095F820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094CEA921D65616F0095F820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,9 @@
 		094CEAA21D65616F0095F820 /* AiQianJinCopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiQianJinCopyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094CEAA61D65616F0095F820 /* AiQianJinCopyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiQianJinCopyUITests.m; sourceTree = "<group>"; };
 		094CEAA81D65616F0095F820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.debug.xcconfig"; sourceTree = "<group>"; };
+		9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiQianJinCopy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FD7A28C7DE0BD0B094B587 /* libPods-AiQianJinCopy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +85,8 @@
 				094CEA9A1D65616F0095F820 /* AiQianJinCopyTests */,
 				094CEAA51D65616F0095F820 /* AiQianJinCopyUITests */,
 				094CEA7F1D65616F0095F820 /* Products */,
+				7A33E80B9EE4070AF7216E4F /* Pods */,
+				5168C32E16F34690B6BB5637 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +105,6 @@
 			children = (
 				094CEA841D65616F0095F820 /* AppDelegate.h */,
 				094CEA851D65616F0095F820 /* AppDelegate.m */,
-				094CEA871D65616F0095F820 /* ViewController.h */,
-				094CEA881D65616F0095F820 /* ViewController.m */,
-				094CEA8A1D65616F0095F820 /* Main.storyboard */,
 				094CEA8D1D65616F0095F820 /* Assets.xcassets */,
 				094CEA8F1D65616F0095F820 /* LaunchScreen.storyboard */,
 				094CEA921D65616F0095F820 /* Info.plist */,
@@ -140,6 +139,23 @@
 			path = AiQianJinCopyUITests;
 			sourceTree = "<group>";
 		};
+		5168C32E16F34690B6BB5637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A33E80B9EE4070AF7216E4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */,
+				E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 094CEAAB1D65616F0095F820 /* Build configuration list for PBXNativeTarget "AiQianJinCopy" */;
 			buildPhases = (
+				FA3C049729D05855BACF9224 /* 📦 Check Pods Manifest.lock */,
 				094CEA7A1D65616F0095F820 /* Sources */,
 				094CEA7B1D65616F0095F820 /* Frameworks */,
 				094CEA7C1D65616F0095F820 /* Resources */,
+				7EDB8F46FAC7A1CB3F58D94D /* 📦 Embed Pods Frameworks */,
+				51802055C7792F85F9E81608 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +264,6 @@
 			files = (
 				094CEA911D65616F0095F820 /* LaunchScreen.storyboard in Resources */,
 				094CEA8E1D65616F0095F820 /* Assets.xcassets in Resources */,
-				094CEA8C1D65616F0095F820 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,12 +283,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51802055C7792F85F9E81608 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EDB8F46FAC7A1CB3F58D94D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3C049729D05855BACF9224 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		094CEA7A1D65616F0095F820 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				094CEA891D65616F0095F820 /* ViewController.m in Sources */,
 				094CEA861D65616F0095F820 /* AppDelegate.m in Sources */,
 				094CEA831D65616F0095F820 /* main.m in Sources */,
 			);
@@ -308,14 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		094CEA8A1D65616F0095F820 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				094CEA8B1D65616F0095F820 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		094CEA8F1D65616F0095F820 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,6 +468,7 @@
 		};
 		094CEAAC1D65616F0095F820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AiQianJinCopy/Info.plist;
@@ -423,6 +481,7 @@
 		};
 		094CEAAD1D65616F0095F820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AiQianJinCopy/Info.plist;
@@ -498,6 +557,7 @@
 				094CEAAD1D65616F0095F820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		094CEAAE1D65616F0095F820 /* Build configuration list for PBXNativeTarget "AiQianJinCopyTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +566,7 @@
 				094CEAB01D65616F0095F820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		094CEAB11D65616F0095F820 /* Build configuration list for PBXNativeTarget "AiQianJinCopyUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +575,7 @@
 				094CEAB31D65616F0095F820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
