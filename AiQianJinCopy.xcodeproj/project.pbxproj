@@ -13,6 +13,15 @@
 		094CEA911D65616F0095F820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094CEA8F1D65616F0095F820 /* LaunchScreen.storyboard */; };
 		094CEA9C1D65616F0095F820 /* AiQianJinCopyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEA9B1D65616F0095F820 /* AiQianJinCopyTests.m */; };
 		094CEAA71D65616F0095F820 /* AiQianJinCopyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAA61D65616F0095F820 /* AiQianJinCopyUITests.m */; };
+		094CEABD1D6573870095F820 /* SJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEABC1D6573870095F820 /* SJBaseViewController.m */; };
+		094CEAC01D6573C80095F820 /* SJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEABF1D6573C80095F820 /* SJTabBarViewController.m */; };
+		094CEAD31D658EEB0095F820 /* SJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAD21D658EEB0095F820 /* SJHomeViewController.m */; };
+		094CEAD61D658F2E0095F820 /* SJInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAD51D658F2E0095F820 /* SJInteractionViewController.m */; };
+		094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAD81D658F430095F820 /* SJProductViewController.m */; };
+		094CEADC1D658F520095F820 /* SJPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEADB1D658F520095F820 /* SJPropertyViewController.m */; };
+		094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEADF1D65919C0095F820 /* SJNavigationController.m */; };
+		0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2931D70A47F00D9C4A7 /* SJHelper.m */; };
+		0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */; };
 		59FD7A28C7DE0BD0B094B587 /* libPods-AiQianJinCopy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +56,26 @@
 		094CEAA21D65616F0095F820 /* AiQianJinCopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiQianJinCopyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094CEAA61D65616F0095F820 /* AiQianJinCopyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiQianJinCopyUITests.m; sourceTree = "<group>"; };
 		094CEAA81D65616F0095F820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094CEABB1D6573870095F820 /* SJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseViewController.h; sourceTree = "<group>"; };
+		094CEABC1D6573870095F820 /* SJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewController.m; sourceTree = "<group>"; };
+		094CEABE1D6573C80095F820 /* SJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabBarViewController.h; sourceTree = "<group>"; };
+		094CEABF1D6573C80095F820 /* SJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabBarViewController.m; sourceTree = "<group>"; };
+		094CEAD11D658EEB0095F820 /* SJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeViewController.h; sourceTree = "<group>"; };
+		094CEAD21D658EEB0095F820 /* SJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeViewController.m; sourceTree = "<group>"; };
+		094CEAD41D658F2E0095F820 /* SJInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionViewController.h; sourceTree = "<group>"; };
+		094CEAD51D658F2E0095F820 /* SJInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionViewController.m; sourceTree = "<group>"; };
+		094CEAD71D658F430095F820 /* SJProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProductViewController.h; sourceTree = "<group>"; };
+		094CEAD81D658F430095F820 /* SJProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProductViewController.m; sourceTree = "<group>"; };
+		094CEADA1D658F520095F820 /* SJPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPropertyViewController.h; sourceTree = "<group>"; };
+		094CEADB1D658F520095F820 /* SJPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPropertyViewController.m; sourceTree = "<group>"; };
+		094CEADE1D65919C0095F820 /* SJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNavigationController.h; sourceTree = "<group>"; };
+		094CEADF1D65919C0095F820 /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
+		094CEAE11D659AD90095F820 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		094CEAE21D659B840095F820 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0996D2921D70A47F00D9C4A7 /* SJHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHelper.h; sourceTree = "<group>"; };
+		0996D2931D70A47F00D9C4A7 /* SJHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHelper.m; sourceTree = "<group>"; };
+		0996D2961D70B11600D9C4A7 /* SJCustomNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomNavBarView.h; sourceTree = "<group>"; };
+		0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomNavBarView.m; sourceTree = "<group>"; };
 		384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.debug.xcconfig"; sourceTree = "<group>"; };
 		9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiQianJinCopy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +132,7 @@
 		094CEA801D65616F0095F820 /* AiQianJinCopy */ = {
 			isa = PBXGroup;
 			children = (
+				094CEAB41D65735C0095F820 /* Classes */,
 				094CEA841D65616F0095F820 /* AppDelegate.h */,
 				094CEA851D65616F0095F820 /* AppDelegate.m */,
 				094CEA8D1D65616F0095F820 /* Assets.xcassets */,
@@ -117,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				094CEA821D65616F0095F820 /* main.m */,
+				094CEAE11D659AD90095F820 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +168,224 @@
 				094CEAA81D65616F0095F820 /* Info.plist */,
 			);
 			path = AiQianJinCopyUITests;
+			sourceTree = "<group>";
+		};
+		094CEAB41D65735C0095F820 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAB51D65735C0095F820 /* Common */,
+				094CEAB91D65735C0095F820 /* Macro */,
+				094CEABA1D65735C0095F820 /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		094CEAB51D65735C0095F820 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0996D2951D70B0FA00D9C4A7 /* Views */,
+				094CEAB61D65735C0095F820 /* ViewControllers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		094CEAB61D65735C0095F820 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				094CEADD1D6591540095F820 /* Nav */,
+				094CEAB71D65735C0095F820 /* Base */,
+				094CEAB81D65735C0095F820 /* TabBar */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		094CEAB71D65735C0095F820 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				094CEABB1D6573870095F820 /* SJBaseViewController.h */,
+				094CEABC1D6573870095F820 /* SJBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		094CEAB81D65735C0095F820 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				094CEABE1D6573C80095F820 /* SJTabBarViewController.h */,
+				094CEABF1D6573C80095F820 /* SJTabBarViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		094CEAB91D65735C0095F820 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAE21D659B840095F820 /* Constants.h */,
+				0996D2921D70A47F00D9C4A7 /* SJHelper.h */,
+				0996D2931D70A47F00D9C4A7 /* SJHelper.m */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		094CEABA1D65735C0095F820 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAC11D658EC60095F820 /* Home */,
+				094CEAC51D658EC60095F820 /* Interaction */,
+				094CEAC91D658EC60095F820 /* Product */,
+				094CEACD1D658EC60095F820 /* Property */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		094CEAC11D658EC60095F820 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAC21D658EC60095F820 /* Controllers */,
+				094CEAC31D658EC60095F820 /* Models */,
+				094CEAC41D658EC60095F820 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		094CEAC21D658EC60095F820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAD11D658EEB0095F820 /* SJHomeViewController.h */,
+				094CEAD21D658EEB0095F820 /* SJHomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		094CEAC31D658EC60095F820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		094CEAC41D658EC60095F820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094CEAC51D658EC60095F820 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAC61D658EC60095F820 /* Controllers */,
+				094CEAC71D658EC60095F820 /* Models */,
+				094CEAC81D658EC60095F820 /* Views */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		094CEAC61D658EC60095F820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAD41D658F2E0095F820 /* SJInteractionViewController.h */,
+				094CEAD51D658F2E0095F820 /* SJInteractionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		094CEAC71D658EC60095F820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		094CEAC81D658EC60095F820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094CEAC91D658EC60095F820 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				094CEACA1D658EC60095F820 /* Controllers */,
+				094CEACB1D658EC60095F820 /* Models */,
+				094CEACC1D658EC60095F820 /* Views */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		094CEACA1D658EC60095F820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				094CEAD71D658F430095F820 /* SJProductViewController.h */,
+				094CEAD81D658F430095F820 /* SJProductViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		094CEACB1D658EC60095F820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		094CEACC1D658EC60095F820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094CEACD1D658EC60095F820 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				094CEACE1D658EC60095F820 /* Controllers */,
+				094CEACF1D658EC60095F820 /* Models */,
+				094CEAD01D658EC60095F820 /* Views */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		094CEACE1D658EC60095F820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				094CEADA1D658F520095F820 /* SJPropertyViewController.h */,
+				094CEADB1D658F520095F820 /* SJPropertyViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		094CEACF1D658EC60095F820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		094CEAD01D658EC60095F820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094CEADD1D6591540095F820 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				094CEADE1D65919C0095F820 /* SJNavigationController.h */,
+				094CEADF1D65919C0095F820 /* SJNavigationController.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		0996D2951D70B0FA00D9C4A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0996D2961D70B11600D9C4A7 /* SJCustomNavBarView.h */,
+				0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5168C32E16F34690B6BB5637 /* Frameworks */ = {
@@ -221,6 +470,7 @@
 		094CEA761D65616F0095F820 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SJ;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = SPIREJ;
 				TargetAttributes = {
@@ -336,8 +586,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */,
 				094CEA861D65616F0095F820 /* AppDelegate.m in Sources */,
+				094CEAD31D658EEB0095F820 /* SJHomeViewController.m in Sources */,
+				094CEAD61D658F2E0095F820 /* SJInteractionViewController.m in Sources */,
+				094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */,
 				094CEA831D65616F0095F820 /* main.m in Sources */,
+				094CEABD1D6573870095F820 /* SJBaseViewController.m in Sources */,
+				094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */,
+				094CEADC1D658F520095F820 /* SJPropertyViewController.m in Sources */,
+				094CEAC01D6573C80095F820 /* SJTabBarViewController.m in Sources */,
+				0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +730,7 @@
 			baseConfigurationReference = 384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AiQianJinCopy/PrefixHeader.pch";
 				INFOPLIST_FILE = AiQianJinCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -484,6 +744,7 @@
 			baseConfigurationReference = E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AiQianJinCopy/PrefixHeader.pch";
 				INFOPLIST_FILE = AiQianJinCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

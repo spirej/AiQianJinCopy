@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  AiQianJinCopy
+//
+//  Created by SPIREJ on 16/8/18.
+//  Copyright © 2016年 SPIREJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Constants.h"
+#import "Masonry.h"
+#import "SJHelper.h"
+
+#endif /* PrefixHeader_pch */

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SJTabBarViewController.h"
+#import "SJNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    SJTabBarViewController *tabbarVC = [[SJTabBarViewController alloc] init];
+    SJNavigationController *nav = [[SJNavigationController alloc] initWithRootViewController:tabbarVC];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
