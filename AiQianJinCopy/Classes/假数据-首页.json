@@ -1,0 +1,120 @@
+{
+  "body" : {
+    "bannerList" : [
+      {
+        "detailUrl" : "https://news.iqianjin.com/uninvestediosv4App/34541.html",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/22183231mkw3.png",
+        "shareContent" : "【福利来啦】“爱钱进官方服务平台”送红包啦！",
+        "time" : 1471429952000,
+        "title" : "【福利来啦】“爱钱进官方服务平台”送红包啦！",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/uninvestediosv4App/34492.html",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/08184227chi5.png",
+        "shareContent" : "2016年8月8日 ，爱钱进客户服务中心全面升级为爱钱进用户体验中心，我们将竭诚为您提供更安全、更便捷、更优质的体验，做您无微不至的理财管家",
+        "time" : 1468752139000,
+        "title" : "爱钱进客户服务中心全面升级为爱钱进用户体验中心",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/uninvestediosv4App/34429.html",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/11194909z5f3.jpg",
+        "shareContent" : "2016年8月10日，据民生银行出具的最新报告显示，截至2016年8月10日17时，爱钱进及母公司普惠金融信息服务（上海）有限公司的风险准备金账户余额为人民币209,481,650.35元，风险准备金成功突破2亿元大关。继2016年1月突破亿元大关之后，仅仅用了7个月时间增至2亿。据悉，风险准备金是根据每月匹配成功的借款合同金额按比例计提，这从侧面印证了爱钱进在互金市场上的超强获客能力和较高喜好度。同时，风险准备金的提升意味着爱钱进抗风险能力愈加坚实，能够为用户提供更加安全的投资环境。",
+        "time" : 1467268187000,
+        "title" : "爱钱进风险准备金破2亿",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "https://m.iqianjin.com/newcomer/newGuide.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201606/07115826l7a2.png",
+        "shareContent" : "新手特权福利，快来查看",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07115832w0hf.png",
+        "time" : 1464597144000,
+        "title" : "靠谱爱钱进，壕送1088元理财红包！",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "https://m.iqianjin.com/member/index.jsp?source=shouye",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201607/01102600pa80.png",
+        "shareContent" : "爱钱进会员，6月特权红包有更新哦，快来看看你的特权红包变了没有？",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/071201274h8v.png",
+        "time" : 1464536234000,
+        "title" : "爱钱进会员体系",
+        "type" : 1
+      }
+    ],
+    "columnList" : [
+      {
+        "amountUnit" : "元",
+        "awardInsterest" : 2,
+        "id" : 3836,
+        "insterest" : 5.5,
+        "insterestExplain" : "今日预期年化收益率(%)",
+        "productAmount" : "50",
+        "productExplain1" : "起投",
+        "productExplain2" : "随存随取",
+        "sid" : "c2e2e8e450",
+        "title" : "零存宝",
+        "type" : 4
+      },
+      {
+        "amountUnit" : "元",
+        "awardInsterest" : 1,
+        "id" : 3839,
+        "insterest" : 7,
+        "insterestExplain" : "预期年化收益率(%)",
+        "period" : 3,
+        "productAmount" : "1000",
+        "productExplain1" : "起投",
+        "productExplain2" : "整存整取",
+        "sid" : "1b00d68773",
+        "title" : "3月期整存宝+",
+        "type" : 2
+      }
+    ],
+    "columnTitle" : "新手专享",
+    "ggList" : [],
+    "imgUrl" : "http://v1.iqianjin.com/testfile/newuser_1088.png",
+    "inviteUrl" : "",
+    "newInvestor" : 1,
+    "redBagImgUrl" : "http:/v1.iqianjin.com/testfile/20160809/home_icon_red@3x.png",
+    "safelyExplain" : "本息保护机制",
+    "safety" : [
+      {
+        "detailUrl" : "http://m.iqianjin.com/app/security/brands.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201606/0711212417f3.png",
+        "shareContent" : "实力高管保驾护航,横扫互联网金融行业各大奖项",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/071205252js2.png",
+        "shareTitle" : "爱钱进——靠谱的互联网金融平台",
+        "title" : "品牌介绍",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "http://m.iqianjin.com/app/security/index.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201606/07112324wnj4.png",
+        "shareContent" : "国家AAA级信用企业,一分投入,十分靠得住！",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07120516l5a3.png",
+        "shareTitle" : "爱钱进——靠谱的互联网金融平台",
+        "title" : "安全保障",
+        "type" : 1
+      },
+      {
+        "detailUrl" : "https://m.iqianjin.com/invite/share.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/25185543ze0e.png",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07120507tocv.png",
+        "shareTitle" : "送你1088元新手大礼包,跟我一起在爱钱进理财吧",
+        "title" : "邀请有礼",
+        "type" : 1
+      }
+    ],
+    "topImg" : "http://v1.iqianjin.com/testfile/invite_h5@3x.png",
+    "topPage" : "https://m.iqianjin.com/invite/inviteShare2.jsp",
+    "topTitle" : "新手路径",
+    "topUrl" : "https://m.iqianjin.com/newcomer/newGuide.jsp"
+  },
+  "code" : 1,
+  "msg" : "成功",
+  "status" : 904,
+  "token" : "ECD9CC729E0E5EE9181B6AEA2F85763459F51EEBD87FFE2C37BA6AFDD9E61E0007F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G8972B35D4300B30AD18BBE0E49555869"
+}

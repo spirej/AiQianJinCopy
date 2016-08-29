@@ -10,6 +10,83 @@
 
 @interface SJHelper : NSObject
 
+#pragma mark -- View
+
+/**
+ *  创建白View
+ *
+ *  @param frame <#frame description#>
+ *
+ *  @return <#return value description#>
+ */
++ (UIView *)buildViewWithFrame:(CGRect)frame;
+
+/**
+ *  创建View
+ *
+ *  @param frame <#frame description#>
+ *  @param color 背景色 默认 白色
+ *
+ *  @return <#return value description#>
+ */
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color;
+
+/**
+ *  创建圆角View
+ *
+ *  @param frame  <#frame description#>
+ *  @param color  背景色 默认 白色
+ *  @param radius 圆角弧度 默认 5
+ *
+ *  @return <#return value description#>
+ */
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color cornerRadius:(CGFloat)radius;
+
+/**
+ *  创建有边框线的View
+ *
+ *  @param frame  <#frame description#>
+ *  @param color  背景色 默认 白色
+ *  @param bWidth 边框线宽度 默认 0.6
+ *  @param bColor 边框线颜色 默认 白色
+ *
+ *  @return <#return value description#>
+ */
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color borderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor;
+
+/**
+ *  创建有边框线的圆角View
+ *
+ *  @param frame  <#frame description#>
+ *  @param color  背景色 默认 白色
+ *  @param bWidth 边框线宽度 默认 0.6
+ *  @param bColor 边框线颜色 默认 白色
+ *  @param radius 圆角弧度   默认 5
+ *
+ *  @return <#return value description#>
+ */
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color borderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor cornerRadius:(CGFloat)radius;
+
+#pragma mark -- AllView Property
+
+/**
+ *  给View设置圆角
+ *
+ *  @param radius 默认 5
+ *  @param view   <#view description#>
+ */
++ (void)setCornerRadius:(CGFloat)radius forView:(UIView *)view;
+
+/**
+ *  给View设置边框
+ *
+ *  @param bWidth 默认 0.6
+ *  @param bColor 默认 白色
+ *  @param view   <#view description#>
+ */
++ (void)setBorderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor forView:(UIView *)view;
+
+
 #pragma mark -- Label
 
 /**
@@ -100,5 +177,17 @@
  *  @return <#return value description#>
  */
 + (UIButton *)buildButtonWithFrame:(CGRect)frame image:(NSString *)image;
+
+/**
+ *  创建TableView
+ *
+ *  @param frame  <#frame description#>
+ *  @param style  <#style description#>
+ *  @param color  背景色 默认 白色
+ *  @param target <#target description#>
+ *
+ *  @return <#return value description#>
+ */
++ (UITableView *)buildTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style backColor:(UIColor *)color target:(id)target;
 
 @end

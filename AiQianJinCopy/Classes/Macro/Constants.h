@@ -12,6 +12,12 @@
 //tabbar items个数
 #define kTabbarNumberOfItems    4
 
+/**
+ *  日志输出
+ */
+//#ifdef DEBUG
+
+#define Print(fmt, ...)          NSLog((@"[文件名:%s]\n" "[方法名:%s]\n" "[行号:%d] \n Log:--->" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 /***************************************************************************
  * 尺寸相关
@@ -20,11 +26,14 @@
 #define kDeviceWidth           [UIScreen mainScreen].bounds.size.width
 #define KDeviceHeight          [UIScreen mainScreen].bounds.size.height
 #define KNavigationBarHeight   (CurrentIOS7?64:44)
-#define KTabBarHeight          49
+#define kStatusBarHeight        20
+#define KTabBarHeight           49
 //View距离屏幕的距离
 #define kDistanceToScreen       10
 //线条的默认高度
 #define kLineH                  0.6
+//默认圆角弧度
+#define cornerR                5
 
 
 /***************************************************************************

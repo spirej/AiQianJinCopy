@@ -12,6 +12,56 @@
 
 //------------------------------------------------------------------------------------------------//
 
++ (UIView *)buildViewWithFrame:(CGRect)frame {
+    UIView *newView         = [[UIView alloc] initWithFrame:frame];
+    newView.backgroundColor = kWhiteColor;
+    
+    return newView;
+}
+
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color {
+    UIView *newView         = [[UIView alloc] initWithFrame:frame];
+    newView.backgroundColor = color==nil?kWhiteColor:color;
+    
+    return newView;
+}
+
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color cornerRadius:(CGFloat)radius {
+    UIView *newView            = [self buildViewWithFrame:frame backColor:color];
+    [self setCornerRadius:radius forView:newView];
+    
+    return newView;
+}
+
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color borderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor {
+    UIView *newView           = [self buildViewWithFrame:frame backColor:color];
+    [self setBorderWidth:bWidth borderColor:bColor forView:newView];
+    
+    return newView;
+}
+
++ (UIView *)buildViewWithFrame:(CGRect)frame backColor:(UIColor *)color borderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor cornerRadius:(CGFloat)radius {
+    UIView *newView           = [self buildViewWithFrame:frame backColor:color cornerRadius:radius];
+    [self setBorderWidth:bWidth borderColor:bColor forView:newView];
+    
+    return newView;
+}
+
+//------------------------------------------------------------------------------------------------//
+
++ (void)setCornerRadius:(CGFloat)radius forView:(UIView *)view {
+    view.clipsToBounds = YES;
+    view.layer.cornerRadius = radius==0?cornerR:radius;
+}
+
++ (void)setBorderWidth:(CGFloat)bWidth borderColor:(UIColor *)bColor forView:(UIView *)view {
+    view.layer.borderWidth = bWidth==0?kLineH:bWidth;
+    view.layer.borderColor = bColor==nil?kWhiteColor.CGColor:bColor.CGColor;
+}
+
+
+//------------------------------------------------------------------------------------------------//
+
 + (UILabel *)buildLabelWithFrame:(CGRect)frame backColor:(UIColor *)color content:(NSString *)text textColor:(UIColor *)tColor {
     UILabel *newLabel        = [[UILabel alloc] initWithFrame:frame];
     newLabel.backgroundColor = color==nil?kClearColor:color;
@@ -68,6 +118,20 @@
     [newButton setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     
     return newButton;
+}
+
+//------------------------------------------------------------------------------------------------//
+
++ (UITableView *)buildTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style backColor:(UIColor *)color target:(id)target {
+    UITableView *newTableView    = [[UITableView alloc] initWithFrame:frame style:style];
+    newTableView.delegate        = target;
+    newTableView.dataSource      = target;
+    newTableView.backgroundColor = color==nil?kWhiteColor:color;
+    newTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
+    newTableView.showsVerticalScrollIndicator   = NO;
+    newTableView.showsHorizontalScrollIndicator = NO;
+    
+    return newTableView;
 }
 
 

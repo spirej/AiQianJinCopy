@@ -22,6 +22,13 @@
 		094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEADF1D65919C0095F820 /* SJNavigationController.m */; };
 		0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2931D70A47F00D9C4A7 /* SJHelper.m */; };
 		0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */; };
+		09E1646F1D73D6B60095E5A6 /* 假数据-首页.json in Resources */ = {isa = PBXBuildFile; fileRef = 09E1646E1D73D6B60095E5A6 /* 假数据-首页.json */; };
+		09E164731D73D7B20095E5A6 /* KDCycleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E164721D73D7B20095E5A6 /* KDCycleBannerView.m */; };
+		09E164761D73D8820095E5A6 /* SJHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E164751D73D8820095E5A6 /* SJHomeHeadView.m */; };
+		09E1647A1D741D360095E5A6 /* SJHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E164781D741D360095E5A6 /* SJHomeCell.m */; };
+		09E1647B1D741D360095E5A6 /* SJHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E164791D741D360095E5A6 /* SJHomeCell.xib */; };
+		09E164801D7429A20095E5A6 /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1647F1D7429A20095E5A6 /* UIView+LBExtension.m */; };
+		09E164831D7432DE0095E5A6 /* SJHomeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E164821D7432DE0095E5A6 /* SJHomeFooterView.m */; };
 		59FD7A28C7DE0BD0B094B587 /* libPods-AiQianJinCopy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +83,18 @@
 		0996D2931D70A47F00D9C4A7 /* SJHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHelper.m; sourceTree = "<group>"; };
 		0996D2961D70B11600D9C4A7 /* SJCustomNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomNavBarView.h; sourceTree = "<group>"; };
 		0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomNavBarView.m; sourceTree = "<group>"; };
+		09E1646E1D73D6B60095E5A6 /* 假数据-首页.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "假数据-首页.json"; path = "../假数据-首页.json"; sourceTree = "<group>"; };
+		09E164711D73D7B20095E5A6 /* KDCycleBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDCycleBannerView.h; sourceTree = "<group>"; };
+		09E164721D73D7B20095E5A6 /* KDCycleBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDCycleBannerView.m; sourceTree = "<group>"; };
+		09E164741D73D8820095E5A6 /* SJHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeHeadView.h; sourceTree = "<group>"; };
+		09E164751D73D8820095E5A6 /* SJHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeHeadView.m; sourceTree = "<group>"; };
+		09E164771D741D360095E5A6 /* SJHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeCell.h; sourceTree = "<group>"; };
+		09E164781D741D360095E5A6 /* SJHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeCell.m; sourceTree = "<group>"; };
+		09E164791D741D360095E5A6 /* SJHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJHomeCell.xib; sourceTree = "<group>"; };
+		09E1647E1D7429A20095E5A6 /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		09E1647F1D7429A20095E5A6 /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		09E164811D7432DE0095E5A6 /* SJHomeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeFooterView.h; sourceTree = "<group>"; };
+		09E164821D7432DE0095E5A6 /* SJHomeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeFooterView.m; sourceTree = "<group>"; };
 		384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.debug.xcconfig"; sourceTree = "<group>"; };
 		9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiQianJinCopy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +192,8 @@
 		094CEAB41D65735C0095F820 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				09E1647C1D7429960095E5A6 /* Categorys */,
+				098B34EA1D73D66C00C09074 /* Source */,
 				094CEAB51D65735C0095F820 /* Common */,
 				094CEAB91D65735C0095F820 /* Macro */,
 				094CEABA1D65735C0095F820 /* Modules */,
@@ -183,6 +204,7 @@
 		094CEAB51D65735C0095F820 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				09E164701D73D7B20095E5A6 /* KDCycleBannerView */,
 				0996D2951D70B0FA00D9C4A7 /* Views */,
 				094CEAB61D65735C0095F820 /* ViewControllers */,
 			);
@@ -267,6 +289,13 @@
 		094CEAC41D658EC60095F820 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				09E164771D741D360095E5A6 /* SJHomeCell.h */,
+				09E164781D741D360095E5A6 /* SJHomeCell.m */,
+				09E164791D741D360095E5A6 /* SJHomeCell.xib */,
+				09E164741D73D8820095E5A6 /* SJHomeHeadView.h */,
+				09E164751D73D8820095E5A6 /* SJHomeHeadView.m */,
+				09E164811D7432DE0095E5A6 /* SJHomeFooterView.h */,
+				09E164821D7432DE0095E5A6 /* SJHomeFooterView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,6 +408,14 @@
 			path = Nav;
 			sourceTree = "<group>";
 		};
+		098B34EA1D73D66C00C09074 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				09E1646E1D73D6B60095E5A6 /* 假数据-首页.json */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		0996D2951D70B0FA00D9C4A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +423,32 @@
 				0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		09E164701D73D7B20095E5A6 /* KDCycleBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				09E164711D73D7B20095E5A6 /* KDCycleBannerView.h */,
+				09E164721D73D7B20095E5A6 /* KDCycleBannerView.m */,
+			);
+			path = KDCycleBannerView;
+			sourceTree = "<group>";
+		};
+		09E1647C1D7429960095E5A6 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				09E1647D1D7429A20095E5A6 /* UIView+LBExtension */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		09E1647D1D7429A20095E5A6 /* UIView+LBExtension */ = {
+			isa = PBXGroup;
+			children = (
+				09E1647E1D7429A20095E5A6 /* UIView+LBExtension.h */,
+				09E1647F1D7429A20095E5A6 /* UIView+LBExtension.m */,
+			);
+			path = "UIView+LBExtension";
 			sourceTree = "<group>";
 		};
 		5168C32E16F34690B6BB5637 /* Frameworks */ = {
@@ -512,6 +575,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E1646F1D73D6B60095E5A6 /* 假数据-首页.json in Resources */,
+				09E1647B1D741D360095E5A6 /* SJHomeCell.xib in Resources */,
 				094CEA911D65616F0095F820 /* LaunchScreen.storyboard in Resources */,
 				094CEA8E1D65616F0095F820 /* Assets.xcassets in Resources */,
 			);
@@ -590,13 +655,18 @@
 				094CEA861D65616F0095F820 /* AppDelegate.m in Sources */,
 				094CEAD31D658EEB0095F820 /* SJHomeViewController.m in Sources */,
 				094CEAD61D658F2E0095F820 /* SJInteractionViewController.m in Sources */,
+				09E164761D73D8820095E5A6 /* SJHomeHeadView.m in Sources */,
 				094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */,
 				094CEA831D65616F0095F820 /* main.m in Sources */,
+				09E164731D73D7B20095E5A6 /* KDCycleBannerView.m in Sources */,
 				094CEABD1D6573870095F820 /* SJBaseViewController.m in Sources */,
+				09E164801D7429A20095E5A6 /* UIView+LBExtension.m in Sources */,
 				094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */,
 				094CEADC1D658F520095F820 /* SJPropertyViewController.m in Sources */,
 				094CEAC01D6573C80095F820 /* SJTabBarViewController.m in Sources */,
+				09E164831D7432DE0095E5A6 /* SJHomeFooterView.m in Sources */,
 				0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */,
+				09E1647A1D741D360095E5A6 /* SJHomeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
