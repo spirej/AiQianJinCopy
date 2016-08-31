@@ -9,8 +9,16 @@
 #ifndef Constants_h
 #define Constants_h
 
+/***************************************************************************
+ * 基本信息
+ **************************/
+
+#define AppVersionCode              @"2"
+
 //tabbar items个数
 #define kTabbarNumberOfItems    4
+
+#define kNetWorkErrorDomain         @"jieyuelicaiError"
 
 /**
  *  日志输出
@@ -72,7 +80,7 @@
 #define kNormalRedColor        ColorWithHex(0xee5e5e, 1)
 
 //默认分割线色
-#define kPartLineColor         ColorWithHex(0xe3e3e3, 1)
+#define kLineColor         ColorWithHex(0xe3e3e3, 1)
 
 
 

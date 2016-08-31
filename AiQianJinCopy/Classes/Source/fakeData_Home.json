@@ -2,6 +2,15 @@
   "body" : {
     "bannerList" : [
       {
+        "detailUrl" : "http://m.iqianjin.com/event/20160826.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/29192037e842.jpg",
+        "shareContent" : "了解爱钱进2016上半年运营报告，点击可查看~",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201608/29192043hnp5.jpg",
+        "time" : 1472469625000,
+        "title" : "爱钱进2016上半年运营报告",
+        "type" : 1
+      },
+      {
         "detailUrl" : "https://news.iqianjin.com/uninvestediosv4App/34541.html",
         "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/22183231mkw3.png",
         "shareContent" : "【福利来啦】“爱钱进官方服务平台”送红包啦！",
@@ -33,53 +42,84 @@
         "time" : 1464597144000,
         "title" : "靠谱爱钱进，壕送1088元理财红包！",
         "type" : 1
-      },
-      {
-        "detailUrl" : "https://m.iqianjin.com/member/index.jsp?source=shouye",
-        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201607/01102600pa80.png",
-        "shareContent" : "爱钱进会员，6月特权红包有更新哦，快来看看你的特权红包变了没有？",
-        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/071201274h8v.png",
-        "time" : 1464536234000,
-        "title" : "爱钱进会员体系",
-        "type" : 1
       }
     ],
     "columnList" : [
       {
         "amountUnit" : "元",
         "awardInsterest" : 2,
-        "id" : 3836,
+        "detailUrl" : "http://m.iqianjin.com/newcomer/newGuide.jsp",
+        "iconUrl" : "https://news.iqianjin.com/news/u/cms/www/201605/26000826n9za.png",
+        "id" : 3846,
         "insterest" : 5.5,
         "insterestExplain" : "今日预期年化收益率(%)",
         "productAmount" : "50",
         "productExplain1" : "起投",
         "productExplain2" : "随存随取",
-        "sid" : "c2e2e8e450",
+        "sid" : "63c4dae6d7",
         "title" : "零存宝",
         "type" : 4
       },
       {
         "amountUnit" : "元",
         "awardInsterest" : 1,
-        "id" : 3839,
+        "detailUrl" : "http://m.iqianjin.com/newcomer/newGuide.jsp",
+        "iconUrl" : "https://news.iqianjin.com/news/u/cms/www/201605/241638526p3t.png",
+        "id" : 3849,
         "insterest" : 7,
         "insterestExplain" : "预期年化收益率(%)",
         "period" : 3,
         "productAmount" : "1000",
         "productExplain1" : "起投",
         "productExplain2" : "整存整取",
-        "sid" : "1b00d68773",
+        "sid" : "30d4823b1c",
         "title" : "3月期整存宝+",
         "type" : 2
       }
     ],
     "columnTitle" : "新手专享",
-    "ggList" : [],
+    "ggList" : [
+      {
+        "detailUrl" : "https://news.iqianjin.com/activitynewsApp/20160825/34569.shtml",
+        "shareContent" : "无忧预约整存宝+，小爱送你关爱红包！",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201608/242256334riz.jpg",
+        "time" : 1472054400000,
+        "title" : "无忧预约整存宝+，小爱送你关爱红包"
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/activitynewsApp/20160823/34555.shtml",
+        "time" : 1471932045000,
+        "title" : "整存宝+预约加入说明"
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/activitynewsApp/20160822/34536.shtml",
+        "shareContent" : "【福利来啦】“爱钱进官方服务平台”送红包啦！自8月22日18:00至9月4日24:00新绑定的用户都有5元普通红包相送。",
+        "shareIcon" : "https://news.iqianjin.com",
+        "time" : 1471860068000,
+        "title" : "【福利来啦】“爱钱进官方服务平台”送红包啦！"
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/activitynewsApp/20160816/34512.shtml",
+        "shareContent" : "作为一家靠谱的互联网金融平台，爱钱进（北京）信息科技有限公司（以下简称“爱钱进”）始终坚持安全、透明、高效的服务原则，同时着力保护投资者的财产安全。近日，我司发现“爱钱进投资”网站（网址：http://www.iqj8.com/）盗用“爱钱进”品牌名，从事互联网金融相关业务。为避免对投资者造成不必要的损失，维护广大消费者的合法权益",
+        "shareIcon" : "https://news.iqianjin.com",
+        "time" : 1471339484000,
+        "title" : "关于发现业内平台侵权爱钱进的官方声明"
+      },
+      {
+        "detailUrl" : "https://news.iqianjin.com/activitynewsApp/20160811/34500.shtml",
+        "shareContent" : "旺财小猪从周一起正式入住到“爱钱进官方服务平台”微信服务号，小伙伴儿们也可以在“爱钱进官方服务平台”上 喂猪啦！",
+        "shareIcon" : "https://news.iqianjin.com",
+        "time" : 1470888026000,
+        "title" : "旺财小猪入住微信服务号啦"
+      }
+    ],
     "imgUrl" : "http://v1.iqianjin.com/testfile/newuser_1088.png",
     "inviteUrl" : "",
     "newInvestor" : 1,
     "redBagImgUrl" : "http:/v1.iqianjin.com/testfile/20160809/home_icon_red@3x.png",
     "safelyExplain" : "本息保护机制",
+    "safelyTitle" : "本息保障机制",
+    "safelyUrl" : "http://m.iqianjin.com/app/security/index.jsp",
     "safety" : [
       {
         "detailUrl" : "http://m.iqianjin.com/app/security/brands.jsp",
@@ -108,6 +148,7 @@
         "type" : 1
       }
     ],
+    "safetyBackImg" : "https://news.iqianjin.com/news/u/cms/www/201606/07112958toxr.png",
     "topImg" : "http://v1.iqianjin.com/testfile/invite_h5@3x.png",
     "topPage" : "https://m.iqianjin.com/invite/inviteShare2.jsp",
     "topTitle" : "新手路径",
@@ -116,5 +157,5 @@
   "code" : 1,
   "msg" : "成功",
   "status" : 904,
-  "token" : "ECD9CC729E0E5EE9181B6AEA2F85763459F51EEBD87FFE2C37BA6AFDD9E61E0007F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G8972B35D4300B30AD18BBE0E49555869"
+  "token" : "040ED8668E769808E949BAA42C188B3A5FD30A3596D5BDEE95E2A30194AA2AC607F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G82F11BE564B3BEA73B021BAADC2A2316"
 }

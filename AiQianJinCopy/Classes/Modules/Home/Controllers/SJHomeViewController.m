@@ -10,8 +10,13 @@
 #import "SJHomeHeadView.h"
 #import "SJHomeCell.h"
 #import "SJHomeFooterView.h"
+#import "SJHomeJson.h"
+#import "SJHomeModel.h"
+#import "SJBannerModel.h"
+#import "SJHomeAdsModel.h"
+#import "SJMenuItemModel.h"
 
-#define kHomeHeadViewH      200
+#define kHomeHeadViewH      355
 #define kHomeFooterViewH    60
 #define kHomeCellH          170
 
@@ -19,6 +24,20 @@
 @property (nonatomic, strong) UITableView       *homeTableView;
 @property (nonatomic, strong) SJHomeHeadView    *homeHeadView;
 @property (nonatomic, strong) SJHomeFooterView  *homeFooterView;
+
+@property (nonatomic, strong) SJHomeJson        *homeJson;
+@property (nonatomic, strong) SJHomeModel       *homeModel;
+@property (nonatomic, strong) SJBannerModel     *bannerModel;
+@property (nonatomic, strong) SJHomeAdsModel    *adsModel;
+@property (nonatomic, strong) SJMenuItemModel   *menuItemModel;
+
+
+@property (nonatomic, copy) NSMutableArray      *bannerImgArr;
+@property (nonatomic, copy) NSMutableArray      *tableViewListArr;
+@property (nonatomic, copy) NSMutableArray      *adsArr;
+
+@property (nonatomic, copy) NSMutableArray      *menuItemIconArr;
+@property (nonatomic, copy) NSMutableArray      *menuItemTitleArr;
 @end
 
 @implementation SJHomeViewController
@@ -28,8 +47,6 @@
     
     [self setUI];
     [self netWorkData];
-    
-    Print(@"%f, %f",kDeviceWidth, KDeviceHeight);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,17 +59,70 @@
 
 #pragma mark - NetWorkData
 - (void)netWorkData {
-    self.homeHeadView.bannerArr = @[@"https://news.iqianjin.com/news/u/cms/www/201608/22183231mkw3.png",
-                                    @"https://news.iqianjin.com/news/u/cms/www/201608/08184227chi5.png",
-                                    @"https://news.iqianjin.com/news/u/cms/www/201608/11194909z5f3.jpg",
-                                    @"https://news.iqianjin.com/news/u/cms/www/201606/07115826l7a2.png",
-                                    @"https://news.iqianjin.com/news/u/cms/www/201607/01102600pa80.png"];
+    //读取本地plist文件
+    NSError *error;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fakeData_Home" ofType:@"json"];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+    
+    //整个json数据
+    _homeJson = [SJHomeJson mj_objectWithKeyValues:jsonObject];
+    
+    //首页home数据
+    _homeModel = [SJHomeModel mj_objectWithKeyValues:_homeJson.body];
+    
+    //home的bannerList
+    [_homeModel.bannerList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //
+        _bannerModel = [SJBannerModel mj_objectWithKeyValues:obj];
+        [self.bannerImgArr addObject:_bannerModel.imgUrl];
+    }];
+    self.homeHeadView.bannerArr = self.bannerImgArr;
+    
+    //ads
+    [_homeModel.ggList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //
+        _adsModel = [SJHomeAdsModel mj_objectWithKeyValues:obj];
+        [self.adsArr addObject:_adsModel.title];
+    }];
+//    _homeHeadView.adsBarArr = self.adsArr;
+    
+    //MenuItem
+    [_homeModel.safety enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //
+        _menuItemModel = [SJMenuItemModel mj_objectWithKeyValues:obj];
+        [self.menuItemIconArr addObject:_menuItemModel.imgUrl];
+        [self.menuItemTitleArr addObject:_menuItemModel.title];
+    }];
+    _homeHeadView.menuItemTitleArr = self.menuItemTitleArr;
+    _homeHeadView.menuItemIconArr = self.menuItemIconArr;
+    
+    //TableView Cell
+    [_homeModel.columnList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //
+        SJHomeCellModel *homeCellModel = [SJHomeCellModel mj_objectWithKeyValues:obj];
+        [self.tableViewListArr addObject:homeCellModel];
+    }];
 }
 
 #pragma mark - Action
 //banner点击代理方法
 - (void)bannerDidSelectedAtIndex:(NSUInteger)index {
     Print(@"index - %ld", index);
+    
+    [[NetServiceManager shareInstance] jyPostPath:@"" params:nil delegate:self waitingAlert:nil success:^(id responseObject) {
+        //
+    } failure:^(NSError *error) {
+        //
+    }];
+}
+
+- (void)itemsDidSelectedAtIndex:(NSUInteger)index {
+    Print(@"item --- %ld", index);
+}
+
+- (void)adsBarDidSelectedAtIndex:(NSUInteger)index {
+    Print(@"广告条点击");
 }
 
 - (void)safeExplain {
@@ -62,7 +132,7 @@
 
 #pragma mark - UITableView Delegate & DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.tableViewListArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,6 +141,7 @@
     if (cell == nil) {
         cell = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([SJHomeCell class]) owner:nil options:nil].lastObject;
     }
+    cell.model = self.tableViewListArr[indexPath.row];
     return cell;
 }
 
@@ -108,6 +179,41 @@
         [_homeFooterView addGestureRecognizer:tapGesture];
     }
     return _homeFooterView;
+}
+
+- (NSMutableArray *)bannerImgArr {
+    if (_bannerImgArr == nil) {
+        _bannerImgArr = [NSMutableArray array];
+    }
+    return _bannerImgArr;
+}
+
+- (NSMutableArray *)tableViewListArr {
+    if (_tableViewListArr == nil) {
+        _tableViewListArr = [NSMutableArray array];
+    }
+    return _tableViewListArr;
+}
+
+- (NSMutableArray *)adsArr {
+    if (_adsArr == nil) {
+        _adsArr = [NSMutableArray array];
+    }
+    return _adsArr;
+}
+
+- (NSMutableArray *)menuItemIconArr {
+    if (_menuItemIconArr == nil) {
+        _menuItemIconArr = [NSMutableArray array];
+    }
+    return _menuItemIconArr;
+}
+
+- (NSMutableArray *)menuItemTitleArr {
+    if (_menuItemTitleArr == nil) {
+        _menuItemTitleArr = [NSMutableArray array];
+    }
+    return _menuItemTitleArr;
 }
 
 @end

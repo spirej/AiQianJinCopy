@@ -20,6 +20,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SSKeychain (1.4.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Masonry (~> 1.0)
   - MJExtension (~> 3.0)
   - SDWebImage (~> 3.8)
+  - SSKeychain (~> 1.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -34,7 +36,8 @@ SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
 
-PODFILE CHECKSUM: d5e48626591d1503a74e6c1c542ed2a08a552dd8
+PODFILE CHECKSUM: afcddd9ead71fe680749d00a4be6ce553e7286c5
 
 COCOAPODS: 1.0.0

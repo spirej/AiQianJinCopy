@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SJHelper : NSObject
 
 #pragma mark -- View
@@ -189,5 +190,63 @@
  *  @return <#return value description#>
  */
 + (UITableView *)buildTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style backColor:(UIColor *)color target:(id)target;
+
+#pragma mark - 功能方法
+
+/**
+ *  @author luohuichao, 16-02-25 11:02:11
+ *
+ *  @brief 检查string的合法性
+ *
+ *  @param str 待检查的string
+ *
+ *  @return 是否合法
+ */
++ (BOOL)stringValid:(NSString *)str;
+
+
+
+#pragma mark - 设备相关
+/**
+ *  @author luohuichao, 16-02-25 14:02:11
+ *
+ *  @brief 获取设备的IDFA
+ *
+ *  @return IDFA
+ */
++ (NSString *)obtainDeviceIDFA;
+
+/**
+ *  @author luohuichao, 16-06-02 11:06:05
+ *
+ *  @brief 获取设备的IDFV
+ *
+ *  @return IDFV
+ */
++ (NSString *)obtainDeviceIDFV;
+
+/**
+ *  @author luohuichao, 16-02-25 14:02:14
+ *
+ *  @brief 设备类型
+ *
+ *  @return 设备类型
+ */
++ (NSString *)obtainDeviceType;
+
+/**
+ *  @author luohuichao, 16-02-25 14:02:59
+ *
+ *  @brief 精确的获取当前设备的机型
+ *
+ *  @return <#return value description#>
+ */
++ (NSString*) deviceString;
+
+/**
+ *  获取当前的app版本号
+ */
++ (NSString *)currentAppVersion;
+
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "SJHelper.h"
+#import <SSKeychain/SSKeychain.h>
+#import <AdSupport/AdSupport.h>
+#import <sys/utsname.h>
 
 @implementation SJHelper
 
@@ -133,6 +136,111 @@
     
     return newTableView;
 }
+
+
+//------------------------------------------------------------------------------------------------//
+
++ (BOOL)stringValid:(NSString *)str {
+    if (![str isKindOfClass:[NSString class]]) {
+        return NO;
+    }
+    if ([[str lowercaseString] isEqualToString:@"(null)"]) {
+        return NO;
+    }
+    if ([[str lowercaseString] isEqualToString:@"<null>"]) {
+        return NO;
+    }
+    if ([[str lowercaseString] isEqualToString:@"null"]) {
+        return NO;
+    }
+    if (str != nil && [str length] >0 && ![@"" isEqualToString:str]) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
+
+
+//------------------------------------------------------------------------------------------------//
+
++ (NSString *)obtainDeviceIDFA
+{
+    NSString *IDFA = [SSKeychain passwordForService:@"com.iqianjin.app.service" account:@"com.iqianjin.app.idfa"];
+    if (![SJHelper stringValid:IDFA]) {
+        //keychain中没有，从系统api中获取
+        IDFA = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        [SSKeychain setPassword:IDFA forService:@"com.iqianjin.app.service" account:@"com.iqianjin.app.idfa"];
+    }
+    Print(@"IDFA ---------- %@",IDFA);
+    return IDFA;
+}
+
++ (NSString *)obtainDeviceIDFV
+{
+    NSString *IDFV = [SSKeychain passwordForService:@"com.iqianjin.app.service" account:@"com.iqianjin.app.idfv"];
+    if (![SJHelper stringValid:IDFV]) {
+        //keychain中没有，从系统api中获取
+        IDFV = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [SSKeychain setPassword:IDFV forService:@"com.iqianjin.app.service" account:@"com.iqianjin.app.idfv"];
+    }
+    Print(@"IDFV ---------- %@",IDFV);
+    return IDFV;
+}
+
++ (NSString *)obtainDeviceType
+{
+    if (CurrentIPhone4) return @"iphone4";
+    if (CurrentIPhone5) return @"iphone5";
+    if (CurrentIPhone6) return @"iphone6";
+    if(CurrentIPhone6Plus) return @"iphone6plus";
+    //针对其他设备处理
+    return @"iphone4";
+}
+
++ (NSString*) deviceString
+
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
+    if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
+    if ([deviceString isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
+    if ([deviceString isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
+    if ([deviceString isEqualToString:@"iPhone3,2"])    return @"iPhone 4";
+    if ([deviceString isEqualToString:@"iPhone4,1"])    return @"iPhone 4";//@"iPhone 4S"这里用于区分设备尺寸 对于尺寸相同设备统一返回同一结果
+    if ([deviceString isEqualToString:@"iPhone5,2"])    return @"iPhone 5";
+    if ([deviceString isEqualToString:@"iPhone5,3"])    return @"iPhone 5";//@"iPhone 5C"
+    if ([deviceString isEqualToString:@"iPhone5,4"])    return @"iPhone 5";//@"iPhone 5C"
+    if ([deviceString isEqualToString:@"iPhone6,2"])    return @"iPhone 5";//@"iPhone 5S"
+    if ([deviceString isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
+    if ([deviceString isEqualToString:@"iPhone7,1"])    return @"iPhone 6P";
+    if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
+    if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
+    if ([deviceString isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
+    if ([deviceString isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
+    if ([deviceString isEqualToString:@"iPad1,1"])      return @"iPad";
+    if ([deviceString isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
+    if ([deviceString isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
+    if ([deviceString isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
+    if ([deviceString isEqualToString:@"iPad2,5"])      return @"iPad mini";
+    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
+    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    return deviceString;
+}
+/**
+ *  @author fushengjun, 16-03-25 12:03:54
+ *
+ *  获取当前APP的版本号
+ *
+ *  @return string
+ */
++ (NSString *)currentAppVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
 
 
 @end
