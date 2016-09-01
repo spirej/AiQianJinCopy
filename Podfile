@@ -6,7 +6,7 @@ pod 'JZNavigationExtension', '~> 1.5'
 pod 'SDWebImage', '~> 3.8'
 pod 'AFNetworking', '~> 3.1'
 pod 'MJExtension', '~> 3.0'
-pod 'MJRefresh','~> 2.3.2'
+pod 'MJRefresh', '~> 3.1'
 pod 'Masonry', '~> 1.0'
 pod 'SSKeychain', '~> 1.4'
 

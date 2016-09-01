@@ -103,6 +103,12 @@
         SJHomeCellModel *homeCellModel = [SJHomeCellModel mj_objectWithKeyValues:obj];
         [self.tableViewListArr addObject:homeCellModel];
     }];
+    
+    //模拟网路数据延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //
+        [self.homeTableView.mj_header endRefreshing];
+    });
 }
 
 #pragma mark - Action
@@ -127,6 +133,10 @@
 
 - (void)safeExplain {
     Print(@"安全机制说明");
+}
+
+- (void)refresh {
+    [self netWorkData];
 }
 
 
@@ -155,6 +165,8 @@
     [self.view addSubview:self.homeTableView];
     self.homeTableView.tableHeaderView = self.homeHeadView;
     self.homeTableView.tableFooterView = self.homeFooterView;
+    
+    self.homeTableView.mj_header = [SJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
 }
 
 - (UITableView *)homeTableView {
