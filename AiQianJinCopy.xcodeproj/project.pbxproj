@@ -418,6 +418,7 @@
 		094CEAB51D65735C0095F820 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				09910F7C1D77EDD1007F7806 /* Refresh */,
 				091D18771D76C11500F181F0 /* MenuItem */,
 				091D18701D768B0800F181F0 /* HWWeakTimer */,
 				091D186C1D7688D700F181F0 /* LBAdsBar */,
@@ -753,6 +754,13 @@
 				09910F3C1D77DBA3007F7806 /* loading_12.png */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		09910F7C1D77EDD1007F7806 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		0996D2951D70B0FA00D9C4A7 /* Views */ = {

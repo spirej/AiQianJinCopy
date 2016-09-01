@@ -17,6 +17,7 @@ PODS:
   - JZNavigationExtension (1.5.0.1)
   - Masonry (1.0.1)
   - MJExtension (3.0.13)
+  - MJRefresh (2.3.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - JZNavigationExtension (~> 1.5)
   - Masonry (~> 1.0)
   - MJExtension (~> 3.0)
+  - MJRefresh (~> 2.3.2)
   - SDWebImage (~> 3.8)
   - SSKeychain (~> 1.4)
 
@@ -35,9 +37,10 @@ SPEC CHECKSUMS:
   JZNavigationExtension: 7b95d2b1c48846b8bedcb40d767448f14cb9a0b7
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
 
-PODFILE CHECKSUM: afcddd9ead71fe680749d00a4be6ce553e7286c5
+PODFILE CHECKSUM: 5a445c43a8395d1e22b77718235c3a9fd5ec384a
 
 COCOAPODS: 1.0.0
