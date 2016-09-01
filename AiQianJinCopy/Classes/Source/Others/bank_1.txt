@@ -1,0 +1,128 @@
+﻿[
+  {
+    "bankName": "中国银行",
+    "ename": "BOC",
+    "tel": "95566",
+    "icon": "boc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国工商银行",
+    "ename": "ICBC",
+    "tel": "95588",
+    "icon": "icbc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国建设银行",
+    "ename": "CCB",
+    "tel": "95533",
+    "icon": "coc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国农业银行",
+    "ename": "ABC",
+    "tel": "95599",
+    "icon": "abc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国邮政储蓄银行",
+    "ename": "PSBC",
+    "tel": "95580",
+    "icon": "psbc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "广发银行",
+    "ename": "GDB",
+    "tel": "400-830-8003",
+    "icon": "gdb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国光大银行",
+    "ename": "CEB",
+    "tel": "95595",
+    "icon": "ceb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "招商银行",
+    "ename": "CMB",
+    "tel": "95555",
+    "icon": "cmb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "交通银行",
+    "ename": "BOCM",
+    "tel": "95559",
+    "icon": "bocom@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国平安",
+    "ename": "DBK",
+    "tel": "95511-3",
+    "icon": "pingan@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "北京银行",
+    "ename": "BOB",
+    "tel": "95526",
+    "icon": "bob@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "华夏银行",
+    "ename": "HXB",
+    "tel": "95577",
+    "icon": "hxb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "浦发银行",
+    "ename": "SPDB",
+    "tel": "95528",
+    "icon": "spdb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "兴业银行",
+    "ename": "CIB",
+    "tel": "95561",
+    "icon": "cib@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中信银行",
+    "ename": "CITIC",
+    "tel": "95558",
+    "icon": "cncb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "中国民生银行",
+    "ename": "CMBC",
+    "tel": "95568",
+    "icon": "cmbc@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "宁波银行",
+    "ename": "NBCB",
+    "tel": "95574",
+    "icon": "nbcb@2x.png",
+    "version": 1
+  },
+  {
+    "bankName": "杭州银行",
+    "ename": "HCCB",
+    "tel": "400-888-8508",
+    "icon": "hccb@2x.png",
+    "version": 1
+  }
+]
