@@ -52,7 +52,7 @@
 - (UILabel *)navTitleLB
 {
     if (_navTitleLB == nil) {
-        _navTitleLB = [SJHelper buildLabelWithFrame:CGRectMake(0, 0, kDeviceWidth - 160, 44) backColor:kClearColor content:@"推荐" textColor:kWhiteColor font:SJBlodFont(18) textAlignment:NSTextAlignmentCenter];
+        _navTitleLB = [SJHelper buildLabelWithFrame:CGRectMake(0, 0, kDeviceWidth - 160, 44) backColor:kClearColor content:@"" textColor:kWhiteColor font:SJBlodFont(18) textAlignment:NSTextAlignmentCenter];
         _navTitleLB.center = CGPointMake(kDeviceWidth/2.0, 20 + 22);
         
         _navTitleLB.hidden = YES;

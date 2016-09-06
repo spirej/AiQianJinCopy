@@ -31,6 +31,15 @@
 		094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEAD81D658F430095F820 /* SJProductViewController.m */; };
 		094CEADC1D658F520095F820 /* SJPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEADB1D658F520095F820 /* SJPropertyViewController.m */; };
 		094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CEADF1D65919C0095F820 /* SJNavigationController.m */; };
+		094F5CD11D791D110004FADD /* fakeData_Interaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 094F5CD01D791D110004FADD /* fakeData_Interaction.json */; };
+		094F5CD41D7978740004FADD /* SJInteractionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F5CD31D7978740004FADD /* SJInteractionHeadView.m */; };
+		094F5CD61D79789A0004FADD /* SJInteractionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094F5CD51D79789A0004FADD /* SJInteractionHeadView.xib */; };
+		098C388A1D7A6DD700A4938C /* SJInteractionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38881D7A6DD700A4938C /* SJInteractionCell.m */; };
+		098C388B1D7A6DD700A4938C /* SJInteractionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098C38891D7A6DD700A4938C /* SJInteractionCell.xib */; };
+		098C389E1D7D666600A4938C /* SJInteractionHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C389D1D7D666600A4938C /* SJInteractionHeadModel.m */; };
+		098C38A11D7D678E00A4938C /* SJInteractionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A01D7D678E00A4938C /* SJInteractionItemModel.m */; };
+		098C38A41D7E64A500A4938C /* SJInteractionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A31D7E64A500A4938C /* SJInteractionCellModel.m */; };
+		098C38A71D7E65B400A4938C /* SJInteractionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A61D7E65B400A4938C /* SJInteractionModel.m */; };
 		09910EF71D7731EB007F7806 /* SJMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09910EF61D7731EB007F7806 /* SJMenuItemModel.m */; };
 		09910EFC1D77D6A7007F7806 /* fakeData_Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 09910EF91D77D6A7007F7806 /* fakeData_Home.json */; };
 		09910F021D77D7C0007F7806 /* bank_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09910F001D77D7C0007F7806 /* bank_1.txt */; };
@@ -179,6 +188,21 @@
 		094CEADF1D65919C0095F820 /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
 		094CEAE11D659AD90095F820 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		094CEAE21D659B840095F820 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		094F5CD01D791D110004FADD /* fakeData_Interaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fakeData_Interaction.json; sourceTree = "<group>"; };
+		094F5CD21D7978740004FADD /* SJInteractionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionHeadView.h; sourceTree = "<group>"; };
+		094F5CD31D7978740004FADD /* SJInteractionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionHeadView.m; sourceTree = "<group>"; };
+		094F5CD51D79789A0004FADD /* SJInteractionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJInteractionHeadView.xib; sourceTree = "<group>"; };
+		098C38871D7A6DD700A4938C /* SJInteractionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionCell.h; sourceTree = "<group>"; };
+		098C38881D7A6DD700A4938C /* SJInteractionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionCell.m; sourceTree = "<group>"; };
+		098C38891D7A6DD700A4938C /* SJInteractionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJInteractionCell.xib; sourceTree = "<group>"; };
+		098C389C1D7D666600A4938C /* SJInteractionHeadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionHeadModel.h; sourceTree = "<group>"; };
+		098C389D1D7D666600A4938C /* SJInteractionHeadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionHeadModel.m; sourceTree = "<group>"; };
+		098C389F1D7D678E00A4938C /* SJInteractionItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionItemModel.h; sourceTree = "<group>"; };
+		098C38A01D7D678E00A4938C /* SJInteractionItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionItemModel.m; sourceTree = "<group>"; };
+		098C38A21D7E64A500A4938C /* SJInteractionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionCellModel.h; sourceTree = "<group>"; };
+		098C38A31D7E64A500A4938C /* SJInteractionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionCellModel.m; sourceTree = "<group>"; };
+		098C38A51D7E65B400A4938C /* SJInteractionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionModel.h; sourceTree = "<group>"; };
+		098C38A61D7E65B400A4938C /* SJInteractionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionModel.m; sourceTree = "<group>"; };
 		09910EF51D7731EB007F7806 /* SJMenuItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMenuItemModel.h; sourceTree = "<group>"; };
 		09910EF61D7731EB007F7806 /* SJMenuItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMenuItemModel.m; sourceTree = "<group>"; };
 		09910EF91D77D6A7007F7806 /* fakeData_Home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fakeData_Home.json; sourceTree = "<group>"; };
@@ -566,6 +590,14 @@
 		094CEAC71D658EC60095F820 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				098C38A51D7E65B400A4938C /* SJInteractionModel.h */,
+				098C38A61D7E65B400A4938C /* SJInteractionModel.m */,
+				098C389C1D7D666600A4938C /* SJInteractionHeadModel.h */,
+				098C389D1D7D666600A4938C /* SJInteractionHeadModel.m */,
+				098C389F1D7D678E00A4938C /* SJInteractionItemModel.h */,
+				098C38A01D7D678E00A4938C /* SJInteractionItemModel.m */,
+				098C38A21D7E64A500A4938C /* SJInteractionCellModel.h */,
+				098C38A31D7E64A500A4938C /* SJInteractionCellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -573,6 +605,12 @@
 		094CEAC81D658EC60095F820 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				094F5CD21D7978740004FADD /* SJInteractionHeadView.h */,
+				094F5CD31D7978740004FADD /* SJInteractionHeadView.m */,
+				094F5CD51D79789A0004FADD /* SJInteractionHeadView.xib */,
+				098C38871D7A6DD700A4938C /* SJInteractionCell.h */,
+				098C38881D7A6DD700A4938C /* SJInteractionCell.m */,
+				098C38891D7A6DD700A4938C /* SJInteractionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -675,6 +713,7 @@
 			isa = PBXGroup;
 			children = (
 				09910EF91D77D6A7007F7806 /* fakeData_Home.json */,
+				094F5CD01D791D110004FADD /* fakeData_Interaction.json */,
 			);
 			path = FakeJson;
 			sourceTree = "<group>";
@@ -944,6 +983,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09910F6F1D77DC45007F7806 /* loadingNew_2.png in Resources */,
+				094F5CD11D791D110004FADD /* fakeData_Interaction.json in Resources */,
 				09910F5E1D77DC30007F7806 /* loading_zhu9.png in Resources */,
 				09910F1E1D77DAE1007F7806 /* ic_com_shuaxin2@2x.png in Resources */,
 				09910F2A1D77DB22007F7806 /* LaunchImage-568h@2x.png in Resources */,
@@ -952,6 +992,7 @@
 				09910F791D77DC45007F7806 /* loadingNew_12.png in Resources */,
 				09910F721D77DC45007F7806 /* loadingNew_5.png in Resources */,
 				09910F761D77DC45007F7806 /* loadingNew_9.png in Resources */,
+				094F5CD61D79789A0004FADD /* SJInteractionHeadView.xib in Resources */,
 				09910F2B1D77DB22007F7806 /* LaunchImage-700-568h@2x.png in Resources */,
 				09910F5A1D77DC30007F7806 /* loading_zhu5.png in Resources */,
 				09910F161D77D944007F7806 /* Default@2x.png in Resources */,
@@ -990,6 +1031,7 @@
 				09910F091D77D7D3007F7806 /* com_glitter_scream_ios4hd@2x.jpg in Resources */,
 				09910F411D77DBA3007F7806 /* loading_5.png in Resources */,
 				09910F2D1D77DB22007F7806 /* LaunchImage-800-667h@2x.png in Resources */,
+				098C388B1D7A6DD700A4938C /* SJInteractionCell.xib in Resources */,
 				09910F431D77DBA3007F7806 /* loading_7.png in Resources */,
 				09910F911D78308B007F7806 /* SJCollectionHeadView.xib in Resources */,
 				09910F121D77D944007F7806 /* Default-568h@2x.png in Resources */,
@@ -1092,11 +1134,15 @@
 				091D186B1D7673B900F181F0 /* SJHomeCellModel.m in Sources */,
 				09910F861D781D23007F7806 /* SJZiChanCollectCell.m in Sources */,
 				092E1F4A1D7531DD0094DEBF /* XSSystemMaintenanceView.m in Sources */,
+				094F5CD41D7978740004FADD /* SJInteractionHeadView.m in Sources */,
 				094CEAD31D658EEB0095F820 /* SJHomeViewController.m in Sources */,
+				098C389E1D7D666600A4938C /* SJInteractionHeadModel.m in Sources */,
+				098C388A1D7A6DD700A4938C /* SJInteractionCell.m in Sources */,
 				09910F7F1D77F06D007F7806 /* SJRefreshHeader.m in Sources */,
 				094CEAD61D658F2E0095F820 /* SJInteractionViewController.m in Sources */,
 				09E164761D73D8820095E5A6 /* SJHomeHeadView.m in Sources */,
 				094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */,
+				098C38A71D7E65B400A4938C /* SJInteractionModel.m in Sources */,
 				094CEA831D65616F0095F820 /* main.m in Sources */,
 				09E164731D73D7B20095E5A6 /* KDCycleBannerView.m in Sources */,
 				0944A48D1D7593370072086D /* SJBannerModel.m in Sources */,
@@ -1109,7 +1155,9 @@
 				094CEAC01D6573C80095F820 /* SJTabBarViewController.m in Sources */,
 				091D187A1D76C13300F181F0 /* SJMenuItem.m in Sources */,
 				0944A4901D7597960072086D /* SJHomeJson.m in Sources */,
+				098C38A41D7E64A500A4938C /* SJInteractionCellModel.m in Sources */,
 				09E164831D7432DE0095E5A6 /* SJHomeFooterView.m in Sources */,
+				098C38A11D7D678E00A4938C /* SJInteractionItemModel.m in Sources */,
 				092E1F461D7531670094DEBF /* NetServiceManager.m in Sources */,
 				0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */,
 				09E1647A1D741D360095E5A6 /* SJHomeCell.m in Sources */,

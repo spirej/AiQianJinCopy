@@ -59,14 +59,8 @@
 
 #pragma mark - NetWorkData
 - (void)netWorkData {
-    //读取本地plist文件
-    NSError *error;
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fakeData_Home" ofType:@"json"];
-    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
-    
     //整个json数据
-    _homeJson = [SJHomeJson mj_objectWithKeyValues:jsonObject];
+    _homeJson = [SJHomeJson mj_objectWithKeyValues:[SJHelper readLocalFileResource:@"fakeData_Home" type:@"json"]];
     
     //首页home数据
     _homeModel = [SJHomeModel mj_objectWithKeyValues:_homeJson.body];

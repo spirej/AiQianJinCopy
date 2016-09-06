@@ -161,6 +161,15 @@
 }
 
 
++ (id)readLocalFileResource:(NSString *)resource type:(NSString *)type
+{
+    //读取本地plist文件
+    NSError *error;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:resource ofType:type];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+    return jsonObject;
+}
 
 //------------------------------------------------------------------------------------------------//
 

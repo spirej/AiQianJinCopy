@@ -194,7 +194,6 @@
 #pragma mark - 功能方法
 
 /**
- *  @author luohuichao, 16-02-25 11:02:11
  *
  *  @brief 检查string的合法性
  *
@@ -204,7 +203,17 @@
  */
 + (BOOL)stringValid:(NSString *)str;
 
-
+/**
+ *  @author fushengjun, 16-09-06 10:09:16
+ *
+ *  读取本地文件
+ *
+ *  @param resource 数据源名称
+ *  @param type     类型
+ *
+ *  @return <#return value description#>
+ */
++ (id)readLocalFileResource:(NSString *)resource type:(NSString *)type;
 
 #pragma mark - 设备相关
 /**
