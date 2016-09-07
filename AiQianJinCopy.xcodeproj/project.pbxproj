@@ -116,6 +116,9 @@
 		09E1647B1D741D360095E5A6 /* SJHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E164791D741D360095E5A6 /* SJHomeCell.xib */; };
 		09E164801D7429A20095E5A6 /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1647F1D7429A20095E5A6 /* UIView+LBExtension.m */; };
 		09E164831D7432DE0095E5A6 /* SJHomeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E164821D7432DE0095E5A6 /* SJHomeFooterView.m */; };
+		09E32B701D7FAA34007E044F /* SJMineInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E32B6F1D7FAA34007E044F /* SJMineInformationViewController.m */; };
+		09E32B731D7FAC16007E044F /* SJMineMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E32B721D7FAC16007E044F /* SJMineMoreViewController.m */; };
+		09E32B771D7FB1DB007E044F /* SJCommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E32B761D7FB1DB007E044F /* SJCommonWebViewController.m */; };
 		59FD7A28C7DE0BD0B094B587 /* libPods-AiQianJinCopy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */; };
 /* End PBXBuildFile section */
 
@@ -290,6 +293,12 @@
 		09E1647F1D7429A20095E5A6 /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 		09E164811D7432DE0095E5A6 /* SJHomeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeFooterView.h; sourceTree = "<group>"; };
 		09E164821D7432DE0095E5A6 /* SJHomeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeFooterView.m; sourceTree = "<group>"; };
+		09E32B6E1D7FAA34007E044F /* SJMineInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMineInformationViewController.h; sourceTree = "<group>"; };
+		09E32B6F1D7FAA34007E044F /* SJMineInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMineInformationViewController.m; sourceTree = "<group>"; };
+		09E32B711D7FAC16007E044F /* SJMineMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMineMoreViewController.h; sourceTree = "<group>"; };
+		09E32B721D7FAC16007E044F /* SJMineMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMineMoreViewController.m; sourceTree = "<group>"; };
+		09E32B751D7FB1DB007E044F /* SJCommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCommonWebViewController.h; sourceTree = "<group>"; };
+		09E32B761D7FB1DB007E044F /* SJCommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCommonWebViewController.m; sourceTree = "<group>"; };
 		384D05985580DB16BC33E87F /* Pods-AiQianJinCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.debug.xcconfig"; sourceTree = "<group>"; };
 		9019B4BFEBB2A9FA7F1E1B33 /* libPods-AiQianJinCopy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiQianJinCopy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D91987223F4AB4D82FADB2 /* Pods-AiQianJinCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiQianJinCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiQianJinCopy/Pods-AiQianJinCopy.release.xcconfig"; sourceTree = "<group>"; };
@@ -455,6 +464,7 @@
 		094CEAB51D65735C0095F820 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				09E32B741D7FB1B3007E044F /* WebViewController */,
 				09910F7C1D77EDD1007F7806 /* Refresh */,
 				091D18771D76C11500F181F0 /* MenuItem */,
 				091D18701D768B0800F181F0 /* HWWeakTimer */,
@@ -509,9 +519,9 @@
 			isa = PBXGroup;
 			children = (
 				094CEAC11D658EC60095F820 /* Home */,
-				094CEAC51D658EC60095F820 /* Interaction */,
 				094CEAC91D658EC60095F820 /* Product */,
 				094CEACD1D658EC60095F820 /* Property */,
+				094CEAC51D658EC60095F820 /* Interaction */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -583,6 +593,10 @@
 			children = (
 				094CEAD41D658F2E0095F820 /* SJInteractionViewController.h */,
 				094CEAD51D658F2E0095F820 /* SJInteractionViewController.m */,
+				09E32B6E1D7FAA34007E044F /* SJMineInformationViewController.h */,
+				09E32B6F1D7FAA34007E044F /* SJMineInformationViewController.m */,
+				09E32B711D7FAC16007E044F /* SJMineMoreViewController.h */,
+				09E32B721D7FAC16007E044F /* SJMineMoreViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -858,6 +872,15 @@
 			path = "UIView+LBExtension";
 			sourceTree = "<group>";
 		};
+		09E32B741D7FB1B3007E044F /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09E32B751D7FB1DB007E044F /* SJCommonWebViewController.h */,
+				09E32B761D7FB1DB007E044F /* SJCommonWebViewController.m */,
+			);
+			path = WebViewController;
+			sourceTree = "<group>";
+		};
 		5168C32E16F34690B6BB5637 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1128,6 +1151,7 @@
 				091D18731D768B0800F181F0 /* HWWeakTimer.m in Sources */,
 				091D18761D768EA700F181F0 /* SJHomeAdsModel.m in Sources */,
 				091D186F1D7688D700F181F0 /* LBAdsBar.m in Sources */,
+				09E32B771D7FB1DB007E044F /* SJCommonWebViewController.m in Sources */,
 				0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */,
 				094CEA861D65616F0095F820 /* AppDelegate.m in Sources */,
 				0944A48A1D758D300072086D /* SJHomeModel.m in Sources */,
@@ -1139,6 +1163,7 @@
 				098C389E1D7D666600A4938C /* SJInteractionHeadModel.m in Sources */,
 				098C388A1D7A6DD700A4938C /* SJInteractionCell.m in Sources */,
 				09910F7F1D77F06D007F7806 /* SJRefreshHeader.m in Sources */,
+				09E32B701D7FAA34007E044F /* SJMineInformationViewController.m in Sources */,
 				094CEAD61D658F2E0095F820 /* SJInteractionViewController.m in Sources */,
 				09E164761D73D8820095E5A6 /* SJHomeHeadView.m in Sources */,
 				094CEAD91D658F430095F820 /* SJProductViewController.m in Sources */,
@@ -1147,6 +1172,7 @@
 				09E164731D73D7B20095E5A6 /* KDCycleBannerView.m in Sources */,
 				0944A48D1D7593370072086D /* SJBannerModel.m in Sources */,
 				094CEABD1D6573870095F820 /* SJBaseViewController.m in Sources */,
+				09E32B731D7FAC16007E044F /* SJMineMoreViewController.m in Sources */,
 				09910F901D78308B007F7806 /* SJCollectionHeadView.m in Sources */,
 				09E164801D7429A20095E5A6 /* UIView+LBExtension.m in Sources */,
 				094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */,

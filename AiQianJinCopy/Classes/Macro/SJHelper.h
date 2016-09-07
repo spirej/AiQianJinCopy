@@ -258,4 +258,26 @@
 + (NSString *)currentAppVersion;
 
 
+#pragma mark -- 快捷跳转
+
+/**
+ *
+ *  默认push跳转
+ *
+ *  @param page   目标控制器类名
+ *  @param target 跳转原类
+ */
++ (void)normalPushWithPage:(NSString *)page target:(UIViewController *)target;
+
+/**
+ *
+ *  隐藏tabbar push跳转
+ *
+ *  @param page   <#page description#>
+ *  @param target <#target description#>
+ */
++ (void)hidesBottomBarPushPage:(NSString *)page target:(UIViewController *)target;
+
+
+
 @end

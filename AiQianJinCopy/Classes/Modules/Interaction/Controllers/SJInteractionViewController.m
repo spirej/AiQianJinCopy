@@ -11,6 +11,9 @@
 #import "SJInteractionHeadView.h"
 #import "SJInteractionCell.h"
 
+#import "SJMineInformationViewController.h"
+#import "SJMineMoreViewController.h"
+
 #import "SJInteractionModel.h"
 #import "SJInteractionCellModel.h"
 
@@ -21,6 +24,9 @@
 static NSString *const identify = @"INTERACTIONCELL";
 
 @interface SJInteractionViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
+{
+    NSString *vipWebUrl;
+}
 @property (nonatomic, strong) SJCustomNavBarView    *customNavBarView;
 @property (nonatomic, strong) UITableView           *tableView;
 @property (nonatomic, strong) SJInteractionHeadView *headView;
@@ -32,6 +38,7 @@ static NSString *const identify = @"INTERACTIONCELL";
 @property (nonatomic, copy) NSMutableArray *cellArr;
 @property (nonatomic, copy) NSMutableArray *itemIconArr;
 @property (nonatomic, copy) NSMutableArray *itemTitleArr;
+@property (nonatomic, copy) NSMutableArray *itemWebUrlArr;
 
 @end
 
@@ -39,6 +46,7 @@ static NSString *const identify = @"INTERACTIONCELL";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self getNetWorkData];
 }
@@ -54,14 +62,18 @@ static NSString *const identify = @"INTERACTIONCELL";
 #pragma mark - NetWorkData
 - (void)getNetWorkData {
     
+    if (self.cellArr.count > 0) {
+        [self.cellArr removeAllObjects];
+    }
+    
     //1.总的json数据
     id json = [SJHelper readLocalFileResource:@"fakeData_Interaction" type:@"json"];
     _model = [SJInteractionModel mj_objectWithKeyValues:json];
     
+    //2.HeaderView
     _headView.model = _model;
     
-    //2.HeaderView
-    
+    vipWebUrl = [_model.member objectForKey:@"levelUrl"];
     
     //3.Items
     [_model.operateInfo enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -70,6 +82,7 @@ static NSString *const identify = @"INTERACTIONCELL";
         
         [self.itemIconArr addObject:_itemModel.imgUrl];
         [self.itemTitleArr addObject:_itemModel.title];
+        [self.itemWebUrlArr addObject:_itemModel.detailUrl];
     }];
     
     _headView.itemIcons = self.itemIconArr;
@@ -88,30 +101,42 @@ static NSString *const identify = @"INTERACTIONCELL";
 #pragma mark - Action
 - (void)information:(UITapGestureRecognizer *)tap {
     Print(@"个人信息");
+    [SJHelper normalPushWithPage:NSStringFromClass([SJMineInformationViewController class]) target:self];
 }
 
 - (void)setting {
     Print(@"设置");
+    [SJHelper normalPushWithPage:NSStringFromClass([SJMineMoreViewController class]) target:self];
 }
 
 - (void)level {
     Print(@"会员");
+    SJCommonWebViewController *vipWebView = [[SJCommonWebViewController alloc] initWithUrl:vipWebUrl title:@"爱钱进会员体系" autoFit:YES];
+    [self.navigationController pushViewController:vipWebView animated:YES];
 }
 
 - (void)vip:(UITapGestureRecognizer *)tap {
     Print(@"vip");
+    SJCommonWebViewController *vipWebView = [[SJCommonWebViewController alloc] initWithUrl:self.itemWebUrlArr[0] title:@"爱钱进会员体系" autoFit:YES];
+    [self.navigationController pushViewController:vipWebView animated:YES];
 }
 
 - (void)friend:(UITapGestureRecognizer *)tap {
     Print(@"friend");
+    SJCommonWebViewController *friendWebView = [[SJCommonWebViewController alloc] initWithUrl:self.itemWebUrlArr[1] title:@"邀请有礼" autoFit:YES];
+    [self.navigationController pushViewController:friendWebView animated:YES];
 }
 
 - (void)statement:(UITapGestureRecognizer *)tap {
     Print(@"statement");
+    SJCommonWebViewController *stateWebView = [[SJCommonWebViewController alloc] initWithUrl:self.itemWebUrlArr[2] title:@"行业发声" autoFit:YES];
+    [self.navigationController pushViewController:stateWebView animated:YES];
 }
 
 - (void)unity:(UITapGestureRecognizer *)tap {
     Print(@"unity");
+    SJCommonWebViewController *unityWebView = [[SJCommonWebViewController alloc] initWithUrl:self.itemWebUrlArr[3] title:@"活动" autoFit:YES];
+    [self.navigationController pushViewController:unityWebView animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -177,6 +202,11 @@ static NSString *const identify = @"INTERACTIONCELL";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     //
+    
+    _cellModel = [SJInteractionCellModel mj_objectWithKeyValues:self.cellArr[indexPath.row]];
+    
+    SJCommonWebViewController *webView = [[SJCommonWebViewController alloc] initWithUrl:_cellModel.detailUrl title:@"" autoFit:YES];
+    [self.navigationController pushViewController:webView animated:YES];
 }
 
 #pragma mark - setter & getter
@@ -246,5 +276,11 @@ static NSString *const identify = @"INTERACTIONCELL";
     return _itemTitleArr;
 }
 
+- (NSMutableArray *)itemWebUrlArr {
+    if (_itemWebUrlArr == nil) {
+        _itemWebUrlArr = [NSMutableArray array];
+    }
+    return _itemWebUrlArr;
+}
 
 @end

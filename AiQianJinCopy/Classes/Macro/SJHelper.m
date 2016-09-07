@@ -251,5 +251,19 @@
 }
 
 
+//------------------------------------------------------------------------------------------------//
+
++ (void)normalPushWithPage:(NSString *)page target:(UIViewController *)target {
+    UIViewController * myObj = [[NSClassFromString(page) alloc] init];
+    [target.navigationController pushViewController:myObj animated:YES];
+}
+
++ (void)hidesBottomBarPushPage:(NSString *)page target:(UIViewController *)target {
+    UIViewController * myObj = [[NSClassFromString(page) alloc] init];
+    myObj.hidesBottomBarWhenPushed  = YES;
+    [target.navigationController pushViewController:myObj animated:YES];
+}
+
+
 
 @end

@@ -18,6 +18,11 @@ PODS:
   - Masonry (1.0.1)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.11)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -29,6 +34,7 @@ DEPENDENCIES:
   - Masonry (~> 1.0)
   - MJExtension (~> 3.0)
   - MJRefresh (~> 3.1)
+  - NJKWebViewProgress (~> 0.2)
   - SDWebImage (~> 3.8)
   - SSKeychain (~> 1.4)
 
@@ -38,9 +44,10 @@ SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: 79d00be812184af91fe12990a9a537e242287c62
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
 
-PODFILE CHECKSUM: da16d2e2b4a9bd16b261d8e68c16dcfb6bd5b985
+PODFILE CHECKSUM: 929c2b21095f7f4278dc9f469918ca293732def5
 
 COCOAPODS: 1.0.0

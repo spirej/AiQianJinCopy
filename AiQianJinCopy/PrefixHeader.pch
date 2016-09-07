@@ -20,6 +20,7 @@
 #import "NetServiceManager.h"
 #import "MJExtension.h"
 #import "SJRefreshHeader.h"
+#import "SJCommonWebViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* PrefixHeader_pch */
