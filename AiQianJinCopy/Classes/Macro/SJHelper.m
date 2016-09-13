@@ -139,6 +139,18 @@
 
 
 //------------------------------------------------------------------------------------------------//
++ (UIScrollView *)buildScrollViewWithFrame:(CGRect)frame backColor:(UIColor *)color target:(id)target {
+    UIScrollView *newScrollView   = [[UIScrollView alloc] initWithFrame:frame];
+    newScrollView.backgroundColor = color==nil?kWhiteColor:color;
+    newScrollView.delegate        = target;
+    newScrollView.showsHorizontalScrollIndicator = YES;
+    newScrollView.showsVerticalScrollIndicator   = YES;
+    
+    return newScrollView;
+}
+
+
+//------------------------------------------------------------------------------------------------//
 
 + (BOOL)stringValid:(NSString *)str {
     if (![str isKindOfClass:[NSString class]]) {

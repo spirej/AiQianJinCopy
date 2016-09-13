@@ -80,7 +80,7 @@
 #define kNormalRedColor        ColorWithHex(0xee5e5e, 1)
 
 //默认分割线色
-#define kLineColor         ColorWithHex(0xe3e3e3, 1)
+#define kLineColor             ColorWithHex(0xe3e3e3, 1)
 
 
 

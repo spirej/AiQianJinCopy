@@ -1,0 +1,36 @@
+ {
+    "awardInsterest" : 0,
+    "explainUrl" : "http://m.iqianjin.com/app/security/index.jsp",
+    "iconUrl" : "http://v1.iqianjin.com/testfile/icon_newuser.png",
+    "id" : 3939,
+    "idVerified" : -1,
+    "insterest" : 5.5,
+    "insterestExplain" : "今日预期年化收益率(%)",
+    "interestImgUrl" : "http://v1.iqianjin.com/testfile/20160726/icon_genggao@3x.png",
+    "interestUrl" : "http://m.iqianjin.com/app/light/plan.jsp",
+    "investPermission" : 1,
+    "labelList" : [
+      "随时可退",
+      "按日计息",
+      "全民理财"
+    ],
+    "newInvestor" : 1,
+    "nowDateTime" : 1473316923547,
+    "openDateTime" : 1473264001000,
+    "overAmount" : 13814850,
+    "perBuyLimitAmount" : 100000,
+    "safelyExplain" : "本息保护机制",
+    "safelyTitle" : "本息保障机制",
+    "safety" : {
+      "detailUrl" : "http://m.iqianjin.com/app/security/index.jsp?page=1",
+      "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201609/0212505877fp.png",
+      "shareContent" : "国家AAA级信用企业,一分投入,十分靠得住!",
+      "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07120426e1a8.png",
+      "shareTitle" : "爱钱进——靠谱的互联网金融平台",
+      "type" : 1
+    },
+    "sid" : "38c3d90002",
+    "singleMin" : 50,
+    "status" : 2,
+    "title" : "每天10点、14点准时起售"
+  }

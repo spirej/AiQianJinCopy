@@ -1,0 +1,90 @@
+{
+  "body" : {
+    "explainUrl" : "http://m.iqianjin.com/app/security/index.jsp",
+    "list" : [
+      {
+        "awardInsterest" : 1,
+        "awardInsterestDesc" : "已奖1.0%",
+        "buttonType" : 1,
+        "iconList" : [
+          "http://v1.iqianjin.com/testfile/icon_newuser.png"
+        ],
+        "insurance" : 2,
+        "issue" : "GC16S08A期",
+        "maxInsterest" : 7,
+        "minAmount" : 1000,
+        "minInsterest" : 7,
+        "newInvestor" : 1,
+        "nowDateTime" : 1473316829478,
+        "openDateTime" : 1473264001000,
+        "overAmount" : 0,
+        "period" : 3,
+        "planId" : 3943,
+        "progressDesc" : "44",
+        "recommend" : 1,
+        "sid" : "7ec8650a6e",
+        "status" : 2
+      },
+      {
+        "awardInsterest" : 0,
+        "awardInsterestDesc" : " ",
+        "buttonType" : 1,
+        "iconList" : [],
+        "insurance" : 2,
+        "issue" : "GD16S08A期",
+        "maxInsterest" : 8,
+        "minAmount" : 1000,
+        "minInsterest" : 8,
+        "newInvestor" : -1,
+        "nowDateTime" : 1473316829478,
+        "openDateTime" : 1473314402000,
+        "overAmount" : 0,
+        "period" : 6,
+        "planId" : 3945,
+        "progressDesc" : "63",
+        "recommend" : -1,
+        "sid" : "6ff06d0653",
+        "status" : 2
+      },
+      {
+        "awardInsterest" : 1,
+        "awardInsterestDesc" : "已奖1.0%",
+        "buttonType" : 1,
+        "iconList" : [
+          "http://v1.iqianjin.com/testfile/icon_newuser.png"
+        ],
+        "insurance" : 2,
+        "issue" : "GE16S08A期",
+        "maxInsterest" : 9.9,
+        "minAmount" : 1000,
+        "minInsterest" : 9.48,
+        "newInvestor" : 1,
+        "nowDateTime" : 1473316829478,
+        "openDateTime" : 1473264001000,
+        "overAmount" : 0,
+        "period" : 12,
+        "planId" : 3942,
+        "progressDesc" : "62",
+        "recommend" : -1,
+        "sid" : "9c24ec64c5",
+        "status" : 2
+      }
+    ],
+    "planIcon" : "http://v3.iqianjin.com/activity/zcb_tuijian.png",
+    "planMsg" : "0元手续费，1000元起投",
+    "safelyExplain" : "本息保护机制",
+    "safelyTitle" : "本息保障机制",
+    "safety" : {
+      "detailUrl" : "http://m.iqianjin.com/app/security/index.jsp?page=1",
+      "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201609/02125121hy75.png",
+      "shareContent" : "国家AAA级信用企业,一分投入,十分靠得住!",
+      "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07120440r2p7.png",
+      "shareTitle" : "爱钱进——靠谱的互联网金融平台",
+      "type" : 1
+    }
+  },
+  "code" : 1,
+  "msg" : "成功",
+  "status" : 904,
+  "token" : "1ECFC62D348F07D23C83542BF5FA25155123F612AF32ED7AC3EAB936AD73B75707F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G4DAF52724F52563EE381AE7AA52A089D"
+}

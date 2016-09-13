@@ -179,6 +179,9 @@
  */
 + (UIButton *)buildButtonWithFrame:(CGRect)frame image:(NSString *)image;
 
+
+#pragma mark -- TableView
+
 /**
  *  创建TableView
  *
@@ -190,6 +193,21 @@
  *  @return <#return value description#>
  */
 + (UITableView *)buildTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style backColor:(UIColor *)color target:(id)target;
+
+
+#pragma mark -- ScrollView
+
+/**
+ *  创建ScrollView
+ *
+ *  @param frame  <#frame description#>
+ *  @param color  背景色 默认 白色
+ *  @param target <#target description#>
+ *
+ *  @return <#return value description#>
+ */
++ (UIScrollView *)buildScrollViewWithFrame:(CGRect)frame backColor:(UIColor *)color target:(id)target;
+
 
 #pragma mark - 功能方法
 

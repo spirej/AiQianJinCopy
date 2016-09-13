@@ -1,0 +1,42 @@
+{
+  "body" : {
+    "awardInsterest" : 1,
+    "explainUrl" : "http://m.iqianjin.com/app/security/index.jsp",
+    "id" : 3938,
+    "idVerified" : -1,
+    "insterestList" : {
+      "12" : "8.00",
+      "15" : "8.50",
+      "18" : "8.90",
+      "21" : "8.90",
+      "24" : "8.90",
+      "6" : "7.00",
+      "9" : "7.50"
+    },
+    "investPermission" : 1,
+    "newInvestor" : 1,
+    "nowDateTime" : 1473316661114,
+    "openDateTime" : 1473264660000,
+    "overAmount" : 0,
+    "period" : "6~18个月",
+    "prompt1" : "每月投资",
+    "prompt2" : "攒钱收益+",
+    "safelyExplain" : "本息保护机制",
+    "safelyTitle" : "本息保障机制",
+    "safety" : {
+      "detailUrl" : "http://m.iqianjin.com/app/security/index.jsp?page=1",
+      "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201609/02125138kv52.png",
+      "shareContent" : "国家AAA级信用企业,一分投入,十分靠得住!",
+      "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/07120449gbij.png",
+      "shareTitle" : "爱钱进——靠谱的互联网金融平台",
+      "type" : 1
+    },
+    "sid" : "e728d07ff3",
+    "singleMin" : 1000,
+    "status" : 3,
+    "title" : "月光拯救计划——小积累，大回报"
+  },
+  "code" : 1,
+  "status" : 904,
+  "token" : "224311DD70A3782489790D9034BB94425FD00E257B02ADC2134AF1FE95BAC68207F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G7ADBF2A456EAF91B1AF78813AA41743B"
+}
