@@ -36,6 +36,7 @@
 @property (nonatomic, copy) NSMutableArray      *tableViewListArr;
 @property (nonatomic, copy) NSMutableArray      *adsArr;
 
+@property (nonatomic, copy) NSMutableArray      *safetyArr;
 @property (nonatomic, copy) NSMutableArray      *menuItemIconArr;
 @property (nonatomic, copy) NSMutableArray      *menuItemTitleArr;
 @end
@@ -46,7 +47,7 @@
     [super viewDidLoad];
     
     [self setUI];
-    [self netWorkData];
+    [self netWorkData];    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -85,6 +86,7 @@
     [_homeModel.safety enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //
         _menuItemModel = [SJMenuItemModel mj_objectWithKeyValues:obj];
+        [self.safetyArr addObject:_menuItemModel];
         [self.menuItemIconArr addObject:_menuItemModel.imgUrl];
         [self.menuItemTitleArr addObject:_menuItemModel.title];
     }];
@@ -119,6 +121,11 @@
 
 - (void)itemsDidSelectedAtIndex:(NSUInteger)index {
     Print(@"item --- %ld", index);
+    
+    SJMenuItemModel *mModel = [SJMenuItemModel mj_objectWithKeyValues:self.safetyArr[index]];
+    
+    SJCommonWebViewController *web = [[SJCommonWebViewController alloc] initWithUrl:mModel.detailUrl title:mModel.title autoFit:YES];
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 - (void)adsBarDidSelectedAtIndex:(NSUInteger)index {
@@ -206,6 +213,13 @@
         _adsArr = [NSMutableArray array];
     }
     return _adsArr;
+}
+
+- (NSMutableArray *)safetyArr {
+    if (_safetyArr == nil) {
+        _safetyArr = [NSMutableArray array];
+    }
+    return _safetyArr;
 }
 
 - (NSMutableArray *)menuItemIconArr {

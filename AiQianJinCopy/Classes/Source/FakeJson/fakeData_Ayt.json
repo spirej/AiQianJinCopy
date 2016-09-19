@@ -1,8 +1,8 @@
-{
-  "body" : {
+
+  {
     "awardInsterest" : 1,
     "explainUrl" : "http://m.iqianjin.com/app/security/index.jsp",
-    "id" : 3938,
+    "id" : 4053,
     "idVerified" : -1,
     "insterestList" : {
       "12" : "8.00",
@@ -15,8 +15,8 @@
     },
     "investPermission" : 1,
     "newInvestor" : 1,
-    "nowDateTime" : 1473316661114,
-    "openDateTime" : 1473264660000,
+    "nowDateTime" : 1474270926007,
+    "openDateTime" : 1474215060000,
     "overAmount" : 0,
     "period" : "6~18个月",
     "prompt1" : "每月投资",
@@ -31,12 +31,8 @@
       "shareTitle" : "爱钱进——靠谱的互联网金融平台",
       "type" : 1
     },
-    "sid" : "e728d07ff3",
+    "sid" : "bfeea4eadb",
     "singleMin" : 1000,
     "status" : 3,
     "title" : "月光拯救计划——小积累，大回报"
-  },
-  "code" : 1,
-  "status" : 904,
-  "token" : "224311DD70A3782489790D9034BB94425FD00E257B02ADC2134AF1FE95BAC68207F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G7ADBF2A456EAF91B1AF78813AA41743B"
-}
+  }

@@ -1,0 +1,33 @@
+{
+  "body" : {
+    "arrivalTime" : 1474300800000,
+    "awardInsterest" : 0,
+    "bankRate" : 0.35,
+    "calculateMoney" : 100000,
+    "calculationExplain" : "投资10,000元，预计每日收益",
+    "calculationImgUrl" : "http://v1.iqianjin.com/testfile/icon_calculator.png",
+    "calculationProfit" : "1.47",
+    "calculationProfitDouble" : 14.67,
+    "calculationUrl" : "",
+    "iconUrl" : "http://v1.iqianjin.com/testfile/icon_newuser.png",
+    "id" : 4046,
+    "idVerified" : -1,
+    "insterest" : 5.5,
+    "insterestExplain" : "今日预期年化收益率(%)",
+    "interestImgUrl" : "http://v1.iqianjin.com/testfile/20160726/icon_tisheng2@3x.png",
+    "interestTime" : 1474214400000,
+    "interestUrl" : "http://m.iqianjin.com/app/light/plan.jsp",
+    "investPermission" : 1,
+    "isShowDetail" : 1,
+    "nowTime" : 1474193210230,
+    "openTime" : 1474128001000,
+    "overAmount" : 9998850,
+    "recordUrl" : "http://m.iqianjin.com/html/demandRedirect.jsp?redirectType=uc",
+    "sid" : "76101be625",
+    "status" : 2
+  },
+  "code" : 1,
+  "msg" : "成功",
+  "status" : 904,
+  "token" : "BC6FF70DED707868CF11501EC2A86B51BB9D788ACB86B3C91E03F5EA47C8C39107F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964GE890DC5056C7516296C74C69C2EBD402"
+}

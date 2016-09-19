@@ -1,5 +1,4 @@
-{
-  "body" : {
+ {
     "explainUrl" : "http://m.iqianjin.com/app/security/index.jsp",
     "list" : [
       {
@@ -82,9 +81,4 @@
       "shareTitle" : "爱钱进——靠谱的互联网金融平台",
       "type" : 1
     }
-  },
-  "code" : 1,
-  "msg" : "成功",
-  "status" : 904,
-  "token" : "1ECFC62D348F07D23C83542BF5FA25155123F612AF32ED7AC3EAB936AD73B75707F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G4DAF52724F52563EE381AE7AA52A089D"
-}
+  }

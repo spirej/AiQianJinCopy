@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SJSlideTypeHeadView.h"
 #import "SJLcbScrollView.h"
+#import "SJAytView.h"
 
 @interface SJProductView : UIView
 
@@ -16,7 +17,7 @@
 @property (nonatomic, strong) UIScrollView          *slideScrollView;
 
 @property (nonatomic, strong) SJLcbScrollView       *LcbScrollView;
-@property (nonatomic, strong) UICollectionView      *ZcbCollectionView;
-@property (nonatomic, strong) UIScrollView          *AytScrollView;
+@property (nonatomic, strong) UITableView           *ZcbTableView;
+@property (nonatomic, strong) SJAytView             *AytView;
 
 @end

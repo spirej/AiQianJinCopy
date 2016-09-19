@@ -17,4 +17,7 @@
 #define BASE_URL                    @"http://v2.iqianjin.com/"
 
 
+#define kNetWorkProductDetails          @"CT5000/MT5004"
+
+
 #endif /* URLConstants_h */

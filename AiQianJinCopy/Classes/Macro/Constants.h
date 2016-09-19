@@ -13,7 +13,7 @@
  * 基本信息
  **************************/
 
-#define AppVersionCode              @"2"
+#define AppVersionCode              @"4.8.4"
 
 //tabbar items个数
 #define kTabbarNumberOfItems    4

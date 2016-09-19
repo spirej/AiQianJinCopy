@@ -11,14 +11,11 @@
 @interface SJLcbModel : NSObject
 
 @property (nonatomic, assign) NSUInteger awardInsterest;
-@property (nonatomic, assign) NSString *insterest;
+@property (nonatomic, copy) NSString *insterest;
 @property (nonatomic, assign) NSUInteger investPermission;
 @property (nonatomic, assign) NSUInteger newInvestor;
 @property (nonatomic, assign) NSUInteger nowDateTime;
 @property (nonatomic, assign) NSUInteger openDateTime;
-@property (nonatomic, assign) NSString *overAmount;
-@property (nonatomic, assign) NSString *perBuyLimitAmount;
-@property (nonatomic, assign) NSString *singleMin;
 @property (nonatomic, assign) NSUInteger status;
 
 @property (nonatomic, assign) BOOL idVerified;
@@ -26,6 +23,9 @@
 @property (nonatomic, copy)NSArray *labelList;
 @property (nonatomic, copy)NSDictionary *safety;
 
+@property (nonatomic, copy) NSString *overAmount;
+@property (nonatomic, copy) NSString *perBuyLimitAmount;
+@property (nonatomic, copy) NSString *singleMin;
 @property (nonatomic, copy) NSString *id;
 @property (nonatomic, copy) NSString *explainUrl;
 @property (nonatomic, copy) NSString *iconUrl;
