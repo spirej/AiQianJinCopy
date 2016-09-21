@@ -233,6 +233,18 @@
  */
 + (id)readLocalFileResource:(NSString *)resource type:(NSString *)type;
 
+/**
+ *  @author fushengjun, 16-09-21 18:09:09
+ *
+ *  格式化时间显示风格
+ *
+ *  @param format   显示格式
+ *  @param longDate 时间
+ *
+ *  @return <#return value description#>
+ */
++ (NSString *)dateFormatter:(NSString *)format andLongDate:(NSString *)longDate;
+
 #pragma mark - 设备相关
 /**
  *  @author luohuichao, 16-02-25 14:02:11

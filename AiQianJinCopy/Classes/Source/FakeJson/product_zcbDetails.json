@@ -1,5 +1,4 @@
-{
-  "body" : {
+ {
     "awardInsterest" : 1,
     "bankRate" : 1.1,
     "buttonType" : 1,
@@ -30,8 +29,4 @@
     "planId" : 4049,
     "sid" : "22462ea763",
     "status" : 2
-  },
-  "code" : 1,
-  "status" : 904,
-  "token" : "4A76EDBAEE626098017E6A5ADBF1D0460EFD553088B49586E70B4B9337A1F94507F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964G5ACAD8FFF6C4675CE03EC4B742975115"
-}
+  }

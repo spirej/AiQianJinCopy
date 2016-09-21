@@ -1,5 +1,4 @@
-{
-  "body" : {
+ {
     "arrivalTime" : 1474300800000,
     "awardInsterest" : 0,
     "bankRate" : 0.35,
@@ -25,9 +24,4 @@
     "recordUrl" : "http://m.iqianjin.com/html/demandRedirect.jsp?redirectType=uc",
     "sid" : "76101be625",
     "status" : 2
-  },
-  "code" : 1,
-  "msg" : "成功",
-  "status" : 904,
-  "token" : "BC6FF70DED707868CF11501EC2A86B51BB9D788ACB86B3C91E03F5EA47C8C39107F2D4EC8F276B9DBDB159A096139DC014879D92634AD98B54AC924207F3E964GE890DC5056C7516296C74C69C2EBD402"
-}
+  }

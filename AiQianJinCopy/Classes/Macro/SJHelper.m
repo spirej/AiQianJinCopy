@@ -183,6 +183,17 @@
     return jsonObject;
 }
 
++ (NSString *)dateFormatter:(NSString *)format andLongDate:(NSString *)longDate {
+    //实例化一个NSDateFormatter对象
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //设定时间格式,这里可以设置成自己需要的格式
+    [dateFormatter setDateFormat:format];
+    NSDate *nowDate = [NSDate dateWithTimeIntervalSince1970:longDate.longLongValue/1000];
+    //用[NSDate date]可以获取系统当前时间
+    NSString *currentDateStr = [dateFormatter stringFromDate:nowDate];
+    return currentDateStr;
+}
+
 //------------------------------------------------------------------------------------------------//
 
 + (NSString *)obtainDeviceIDFA

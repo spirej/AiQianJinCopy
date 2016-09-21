@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090E4F931D922A660094B4F2 /* SJJoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E4F921D922A660094B4F2 /* SJJoinView.m */; };
+		090E4F951D922A740094B4F2 /* SJJoinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090E4F941D922A740094B4F2 /* SJJoinView.xib */; };
+		090E4F981D9234F90094B4F2 /* SJLcbDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E4F971D9234F90094B4F2 /* SJLcbDetailsView.m */; };
+		090E4F9A1D9235060094B4F2 /* SJLcbDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090E4F991D9235060094B4F2 /* SJLcbDetailsView.xib */; };
+		090E4F9D1D92770E0094B4F2 /* SJLcbDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E4F9C1D92770E0094B4F2 /* SJLcbDetailsModel.m */; };
 		091D186B1D7673B900F181F0 /* SJHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D186A1D7673B900F181F0 /* SJHomeCellModel.m */; };
 		091D186F1D7688D700F181F0 /* LBAdsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D186E1D7688D700F181F0 /* LBAdsBar.m */; };
 		091D18731D768B0800F181F0 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D18721D768B0800F181F0 /* HWWeakTimer.m */; };
 		091D18761D768EA700F181F0 /* SJHomeAdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D18751D768EA700F181F0 /* SJHomeAdsModel.m */; };
 		091D187A1D76C13300F181F0 /* SJMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D18791D76C13300F181F0 /* SJMenuItem.m */; };
 		091D187C1D76C16A00F181F0 /* SJMenuItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091D187B1D76C16A00F181F0 /* SJMenuItem.xib */; };
-		0926ACCF1D8E9EAD00508403 /* product_type_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0926ACCE1D8E9EAD00508403 /* product_type_2.json */; };
-		0926ACD11D8E9F0200508403 /* product_type_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0926ACD01D8E9F0200508403 /* product_type_1.json */; };
+		0926ACCF1D8E9EAD00508403 /* product_zcbDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 0926ACCE1D8E9EAD00508403 /* product_zcbDetails.json */; };
+		0926ACD11D8E9F0200508403 /* product_lcbDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 0926ACD01D8E9F0200508403 /* product_lcbDetails.json */; };
 		092D557F1D7FF66A000C9737 /* SJSlideTypeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092D557E1D7FF66A000C9737 /* SJSlideTypeHeadView.m */; };
 		092D55821D81032F000C9737 /* SJProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092D55811D81032F000C9737 /* SJProductView.m */; };
 		092D55861D813FB4000C9737 /* fakeData_Zcb.json in Resources */ = {isa = PBXBuildFile; fileRef = 092D55851D813FB4000C9737 /* fakeData_Zcb.json */; };
@@ -52,6 +57,11 @@
 		098C38A11D7D678E00A4938C /* SJInteractionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A01D7D678E00A4938C /* SJInteractionItemModel.m */; };
 		098C38A41D7E64A500A4938C /* SJInteractionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A31D7E64A500A4938C /* SJInteractionCellModel.m */; };
 		098C38A71D7E65B400A4938C /* SJInteractionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C38A61D7E65B400A4938C /* SJInteractionModel.m */; };
+		098C3CF61D92CB9B00E39F9C /* SJLcbCalculView.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C3CF51D92CB9B00E39F9C /* SJLcbCalculView.m */; };
+		098C3CF81D92CBC600E39F9C /* SJLcbCalculView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098C3CF71D92CBC600E39F9C /* SJLcbCalculView.xib */; };
+		098C3CFB1D92D7A900E39F9C /* SJZcbCalculView.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C3CFA1D92D7A900E39F9C /* SJZcbCalculView.m */; };
+		098C3CFD1D92D7BF00E39F9C /* SJZcbCalculView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098C3CFC1D92D7BF00E39F9C /* SJZcbCalculView.xib */; };
+		098C3D001D92E4E600E39F9C /* SJZcbDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 098C3CFF1D92E4E600E39F9C /* SJZcbDetailsModel.m */; };
 		09910EF71D7731EB007F7806 /* SJMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09910EF61D7731EB007F7806 /* SJMenuItemModel.m */; };
 		09910EFC1D77D6A7007F7806 /* fakeData_Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 09910EF91D77D6A7007F7806 /* fakeData_Home.json */; };
 		09910F021D77D7C0007F7806 /* bank_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09910F001D77D7C0007F7806 /* bank_1.txt */; };
@@ -122,6 +132,7 @@
 		09910F911D78308B007F7806 /* SJCollectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09910F8F1D78308B007F7806 /* SJCollectionHeadView.xib */; };
 		0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2931D70A47F00D9C4A7 /* SJHelper.m */; };
 		0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */; };
+		09A1474A1D91850D004C26EB /* SJProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A147491D91850D004C26EB /* SJProductDetailViewController.m */; };
 		09A6B5E41D88555C00F332FA /* SJZcbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A6B5E21D88555C00F332FA /* SJZcbCell.m */; };
 		09A6B5E51D88555C00F332FA /* SJZcbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A6B5E31D88555C00F332FA /* SJZcbCell.xib */; };
 		09A6B5E81D88605A00F332FA /* SJZcbHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A6B5E71D88605A00F332FA /* SJZcbHeadView.m */; };
@@ -160,6 +171,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090E4F911D922A660094B4F2 /* SJJoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJJoinView.h; sourceTree = "<group>"; };
+		090E4F921D922A660094B4F2 /* SJJoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJJoinView.m; sourceTree = "<group>"; };
+		090E4F941D922A740094B4F2 /* SJJoinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJJoinView.xib; sourceTree = "<group>"; };
+		090E4F961D9234F90094B4F2 /* SJLcbDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLcbDetailsView.h; sourceTree = "<group>"; };
+		090E4F971D9234F90094B4F2 /* SJLcbDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLcbDetailsView.m; sourceTree = "<group>"; };
+		090E4F991D9235060094B4F2 /* SJLcbDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJLcbDetailsView.xib; sourceTree = "<group>"; };
+		090E4F9B1D92770E0094B4F2 /* SJLcbDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLcbDetailsModel.h; sourceTree = "<group>"; };
+		090E4F9C1D92770E0094B4F2 /* SJLcbDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLcbDetailsModel.m; sourceTree = "<group>"; };
 		091D18691D7673B900F181F0 /* SJHomeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeCellModel.h; sourceTree = "<group>"; };
 		091D186A1D7673B900F181F0 /* SJHomeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeCellModel.m; sourceTree = "<group>"; };
 		091D186D1D7688D700F181F0 /* LBAdsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAdsBar.h; sourceTree = "<group>"; };
@@ -171,8 +190,8 @@
 		091D18781D76C13300F181F0 /* SJMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMenuItem.h; sourceTree = "<group>"; };
 		091D18791D76C13300F181F0 /* SJMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMenuItem.m; sourceTree = "<group>"; };
 		091D187B1D76C16A00F181F0 /* SJMenuItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJMenuItem.xib; sourceTree = "<group>"; };
-		0926ACCE1D8E9EAD00508403 /* product_type_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product_type_2.json; sourceTree = "<group>"; };
-		0926ACD01D8E9F0200508403 /* product_type_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product_type_1.json; sourceTree = "<group>"; };
+		0926ACCE1D8E9EAD00508403 /* product_zcbDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product_zcbDetails.json; sourceTree = "<group>"; };
+		0926ACD01D8E9F0200508403 /* product_lcbDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product_lcbDetails.json; sourceTree = "<group>"; };
 		092D557D1D7FF66A000C9737 /* SJSlideTypeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSlideTypeHeadView.h; sourceTree = "<group>"; };
 		092D557E1D7FF66A000C9737 /* SJSlideTypeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSlideTypeHeadView.m; sourceTree = "<group>"; };
 		092D55801D81032F000C9737 /* SJProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProductView.h; sourceTree = "<group>"; };
@@ -245,6 +264,14 @@
 		098C38A31D7E64A500A4938C /* SJInteractionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionCellModel.m; sourceTree = "<group>"; };
 		098C38A51D7E65B400A4938C /* SJInteractionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInteractionModel.h; sourceTree = "<group>"; };
 		098C38A61D7E65B400A4938C /* SJInteractionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInteractionModel.m; sourceTree = "<group>"; };
+		098C3CF41D92CB9B00E39F9C /* SJLcbCalculView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLcbCalculView.h; sourceTree = "<group>"; };
+		098C3CF51D92CB9B00E39F9C /* SJLcbCalculView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLcbCalculView.m; sourceTree = "<group>"; };
+		098C3CF71D92CBC600E39F9C /* SJLcbCalculView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJLcbCalculView.xib; sourceTree = "<group>"; };
+		098C3CF91D92D7A900E39F9C /* SJZcbCalculView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJZcbCalculView.h; sourceTree = "<group>"; };
+		098C3CFA1D92D7A900E39F9C /* SJZcbCalculView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJZcbCalculView.m; sourceTree = "<group>"; };
+		098C3CFC1D92D7BF00E39F9C /* SJZcbCalculView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJZcbCalculView.xib; sourceTree = "<group>"; };
+		098C3CFE1D92E4E600E39F9C /* SJZcbDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJZcbDetailsModel.h; sourceTree = "<group>"; };
+		098C3CFF1D92E4E600E39F9C /* SJZcbDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJZcbDetailsModel.m; sourceTree = "<group>"; };
 		09910EF51D7731EB007F7806 /* SJMenuItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMenuItemModel.h; sourceTree = "<group>"; };
 		09910EF61D7731EB007F7806 /* SJMenuItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMenuItemModel.m; sourceTree = "<group>"; };
 		09910EF91D77D6A7007F7806 /* fakeData_Home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fakeData_Home.json; sourceTree = "<group>"; };
@@ -321,6 +348,8 @@
 		0996D2931D70A47F00D9C4A7 /* SJHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHelper.m; sourceTree = "<group>"; };
 		0996D2961D70B11600D9C4A7 /* SJCustomNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomNavBarView.h; sourceTree = "<group>"; };
 		0996D2971D70B11600D9C4A7 /* SJCustomNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomNavBarView.m; sourceTree = "<group>"; };
+		09A147481D91850D004C26EB /* SJProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProductDetailViewController.h; sourceTree = "<group>"; };
+		09A147491D91850D004C26EB /* SJProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProductDetailViewController.m; sourceTree = "<group>"; };
 		09A6B5E11D88555C00F332FA /* SJZcbCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJZcbCell.h; sourceTree = "<group>"; };
 		09A6B5E21D88555C00F332FA /* SJZcbCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJZcbCell.m; sourceTree = "<group>"; };
 		09A6B5E31D88555C00F332FA /* SJZcbCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJZcbCell.xib; sourceTree = "<group>"; };
@@ -705,6 +734,8 @@
 			children = (
 				094CEAD71D658F430095F820 /* SJProductViewController.h */,
 				094CEAD81D658F430095F820 /* SJProductViewController.m */,
+				09A147481D91850D004C26EB /* SJProductDetailViewController.h */,
+				09A147491D91850D004C26EB /* SJProductDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -720,6 +751,10 @@
 				094A8A081D8948F500CB80BC /* SJZcbCellModel.m */,
 				09F4D0061D8FCF79009A5812 /* SJAytModel.h */,
 				09F4D0071D8FCF79009A5812 /* SJAytModel.m */,
+				090E4F9B1D92770E0094B4F2 /* SJLcbDetailsModel.h */,
+				090E4F9C1D92770E0094B4F2 /* SJLcbDetailsModel.m */,
+				098C3CFE1D92E4E600E39F9C /* SJZcbDetailsModel.h */,
+				098C3CFF1D92E4E600E39F9C /* SJZcbDetailsModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -743,6 +778,18 @@
 				09F4D0091D8FD2FF009A5812 /* SJAytView.h */,
 				09F4D00A1D8FD2FF009A5812 /* SJAytView.m */,
 				09F4D00C1D8FD30F009A5812 /* SJAytView.xib */,
+				090E4F911D922A660094B4F2 /* SJJoinView.h */,
+				090E4F921D922A660094B4F2 /* SJJoinView.m */,
+				090E4F941D922A740094B4F2 /* SJJoinView.xib */,
+				090E4F961D9234F90094B4F2 /* SJLcbDetailsView.h */,
+				090E4F971D9234F90094B4F2 /* SJLcbDetailsView.m */,
+				090E4F991D9235060094B4F2 /* SJLcbDetailsView.xib */,
+				098C3CF41D92CB9B00E39F9C /* SJLcbCalculView.h */,
+				098C3CF51D92CB9B00E39F9C /* SJLcbCalculView.m */,
+				098C3CF71D92CBC600E39F9C /* SJLcbCalculView.xib */,
+				098C3CF91D92D7A900E39F9C /* SJZcbCalculView.h */,
+				098C3CFA1D92D7A900E39F9C /* SJZcbCalculView.m */,
+				098C3CFC1D92D7BF00E39F9C /* SJZcbCalculView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -811,8 +858,8 @@
 		09910EF81D77D6A7007F7806 /* FakeJson */ = {
 			isa = PBXGroup;
 			children = (
-				0926ACD01D8E9F0200508403 /* product_type_1.json */,
-				0926ACCE1D8E9EAD00508403 /* product_type_2.json */,
+				0926ACD01D8E9F0200508403 /* product_lcbDetails.json */,
+				0926ACCE1D8E9EAD00508403 /* product_zcbDetails.json */,
 				092D55871D813FEB000C9737 /* fakeData_Lcb.json */,
 				092D55851D813FB4000C9737 /* fakeData_Zcb.json */,
 				09F4D0041D8FCEC5009A5812 /* fakeData_Ayt.json */,
@@ -1120,7 +1167,7 @@
 				09910F701D77DC45007F7806 /* loadingNew_3.png in Resources */,
 				09910F771D77DC45007F7806 /* loadingNew_10.png in Resources */,
 				09910F711D77DC45007F7806 /* loadingNew_4.png in Resources */,
-				0926ACD11D8E9F0200508403 /* product_type_1.json in Resources */,
+				0926ACD11D8E9F0200508403 /* product_lcbDetails.json in Resources */,
 				09910F441D77DBA3007F7806 /* loading_8.png in Resources */,
 				09910F201D77DAE1007F7806 /* ic_com_shuaxin4@2x.png in Resources */,
 				09910F2C1D77DB22007F7806 /* LaunchImage-700@2x.png in Resources */,
@@ -1139,7 +1186,7 @@
 				09910F151D77D944007F7806 /* Default.png in Resources */,
 				09910F571D77DC30007F7806 /* loading_zhu2.png in Resources */,
 				09910F611D77DC30007F7806 /* loading_zhu12.png in Resources */,
-				0926ACCF1D8E9EAD00508403 /* product_type_2.json in Resources */,
+				0926ACCF1D8E9EAD00508403 /* product_zcbDetails.json in Resources */,
 				09F4D0051D8FCEC5009A5812 /* fakeData_Ayt.json in Resources */,
 				094CEA8E1D65616F0095F820 /* Assets.xcassets in Resources */,
 				09910F871D781D23007F7806 /* SJZiChanCollectCell.xib in Resources */,
@@ -1155,10 +1202,12 @@
 				098C388B1D7A6DD700A4938C /* SJInteractionCell.xib in Resources */,
 				09910F431D77DBA3007F7806 /* loading_7.png in Resources */,
 				09910F911D78308B007F7806 /* SJCollectionHeadView.xib in Resources */,
+				090E4F9A1D9235060094B4F2 /* SJLcbDetailsView.xib in Resources */,
 				09910F121D77D944007F7806 /* Default-568h@2x.png in Resources */,
 				09910F421D77DBA3007F7806 /* loading_6.png in Resources */,
 				09910F021D77D7C0007F7806 /* bank_1.txt in Resources */,
 				09910F1D1D77DAE1007F7806 /* ic_com_shuaxin1@2x.png in Resources */,
+				090E4F951D922A740094B4F2 /* SJJoinView.xib in Resources */,
 				09910F3E1D77DBA3007F7806 /* loading_2.png in Resources */,
 				09910EFC1D77D6A7007F7806 /* fakeData_Home.json in Resources */,
 				09910F591D77DC30007F7806 /* loading_zhu4.png in Resources */,
@@ -1168,10 +1217,12 @@
 				09910F2F1D77DB22007F7806 /* LaunchImage.png in Resources */,
 				09910F3D1D77DBA3007F7806 /* loading_1.png in Resources */,
 				09910F731D77DC45007F7806 /* loadingNew_6.png in Resources */,
+				098C3CFD1D92D7BF00E39F9C /* SJZcbCalculView.xib in Resources */,
 				09910F401D77DBA3007F7806 /* loading_4.png in Resources */,
 				09910F0A1D77D7D3007F7806 /* com_glitter_scream_ios5@2x.jpg in Resources */,
 				09910F141D77D944007F7806 /* Default-736h@3x.png in Resources */,
 				09910F211D77DAE1007F7806 /* ic_com_shuaxin5@2x.png in Resources */,
+				098C3CF81D92CBC600E39F9C /* SJLcbCalculView.xib in Resources */,
 				09910F5B1D77DC30007F7806 /* loading_zhu6.png in Resources */,
 				09910F751D77DC45007F7806 /* loadingNew_8.png in Resources */,
 				092D55921D81756A000C9737 /* SJLcbView.xib in Resources */,
@@ -1250,18 +1301,22 @@
 				09F4D00B1D8FD2FF009A5812 /* SJAytView.m in Sources */,
 				092D55901D81754E000C9737 /* SJLcbView.m in Sources */,
 				091D18731D768B0800F181F0 /* HWWeakTimer.m in Sources */,
+				090E4F931D922A660094B4F2 /* SJJoinView.m in Sources */,
 				091D18761D768EA700F181F0 /* SJHomeAdsModel.m in Sources */,
 				091D186F1D7688D700F181F0 /* LBAdsBar.m in Sources */,
 				09E32B771D7FB1DB007E044F /* SJCommonWebViewController.m in Sources */,
 				0996D2981D70B11600D9C4A7 /* SJCustomNavBarView.m in Sources */,
 				094CEA861D65616F0095F820 /* AppDelegate.m in Sources */,
+				098C3CF61D92CB9B00E39F9C /* SJLcbCalculView.m in Sources */,
 				0944A48A1D758D300072086D /* SJHomeModel.m in Sources */,
 				09A6B5E41D88555C00F332FA /* SJZcbCell.m in Sources */,
 				091D186B1D7673B900F181F0 /* SJHomeCellModel.m in Sources */,
 				09910F861D781D23007F7806 /* SJZiChanCollectCell.m in Sources */,
+				090E4F9D1D92770E0094B4F2 /* SJLcbDetailsModel.m in Sources */,
 				092E1F4A1D7531DD0094DEBF /* XSSystemMaintenanceView.m in Sources */,
 				094F5CD41D7978740004FADD /* SJInteractionHeadView.m in Sources */,
 				094CEAD31D658EEB0095F820 /* SJHomeViewController.m in Sources */,
+				090E4F981D9234F90094B4F2 /* SJLcbDetailsView.m in Sources */,
 				094A8A061D893DAB00CB80BC /* SJZcbModel.m in Sources */,
 				092D558B1D814595000C9737 /* SJLcbScrollView.m in Sources */,
 				098C389E1D7D666600A4938C /* SJInteractionHeadModel.m in Sources */,
@@ -1282,11 +1337,13 @@
 				092D55821D81032F000C9737 /* SJProductView.m in Sources */,
 				094CEAE01D65919C0095F820 /* SJNavigationController.m in Sources */,
 				094CEADC1D658F520095F820 /* SJPropertyViewController.m in Sources */,
+				098C3CFB1D92D7A900E39F9C /* SJZcbCalculView.m in Sources */,
 				092D557F1D7FF66A000C9737 /* SJSlideTypeHeadView.m in Sources */,
 				09910EF71D7731EB007F7806 /* SJMenuItemModel.m in Sources */,
 				092D55951D817BC6000C9737 /* SJLcbModel.m in Sources */,
 				094CEAC01D6573C80095F820 /* SJTabBarViewController.m in Sources */,
 				091D187A1D76C13300F181F0 /* SJMenuItem.m in Sources */,
+				09A1474A1D91850D004C26EB /* SJProductDetailViewController.m in Sources */,
 				0944A4901D7597960072086D /* SJHomeJson.m in Sources */,
 				094A8A091D8948F500CB80BC /* SJZcbCellModel.m in Sources */,
 				09A6B5E81D88605A00F332FA /* SJZcbHeadView.m in Sources */,
@@ -1297,6 +1354,7 @@
 				0996D2941D70A47F00D9C4A7 /* SJHelper.m in Sources */,
 				09E1647A1D741D360095E5A6 /* SJHomeCell.m in Sources */,
 				09F4D0081D8FCF79009A5812 /* SJAytModel.m in Sources */,
+				098C3D001D92E4E600E39F9C /* SJZcbDetailsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

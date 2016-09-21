@@ -16,11 +16,16 @@
 #import "SJHomeAdsModel.h"
 #import "SJMenuItemModel.h"
 
+#import "SJProductDetailViewController.h"
+
 #define kHomeHeadViewH      355
 #define kHomeFooterViewH    60
 #define kHomeCellH          170
 
 @interface SJHomeViewController ()<SJHomeHeaderViewDelegate, UITableViewDelegate, UITableViewDataSource>
+{
+    DetailType productType;
+}
 @property (nonatomic, strong) UITableView       *homeTableView;
 @property (nonatomic, strong) SJHomeHeadView    *homeHeadView;
 @property (nonatomic, strong) SJHomeFooterView  *homeFooterView;
@@ -46,6 +51,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    productType = DetailType_Zcb;
+    
     [self setUI];
     [self netWorkData];    
 }
@@ -60,6 +67,22 @@
 
 #pragma mark - NetWorkData
 - (void)netWorkData {
+    if (_bannerImgArr && _bannerImgArr.count > 0) {
+        [_bannerImgArr removeAllObjects];
+    }
+    if (_adsArr && _adsArr.count > 0) {
+        [_adsArr removeAllObjects];
+    }
+    if (_menuItemIconArr && _menuItemIconArr.count > 0) {
+        [_menuItemIconArr removeAllObjects];
+    }
+    if (_menuItemTitleArr && _menuItemTitleArr.count > 0) {
+        [_menuItemTitleArr removeAllObjects];
+    }
+    if (_tableViewListArr && _tableViewListArr.count > 0) {
+        [_tableViewListArr removeAllObjects];
+    }
+    
     //整个json数据
     _homeJson = [SJHomeJson mj_objectWithKeyValues:[SJHelper readLocalFileResource:@"fakeData_Home" type:@"json"]];
     
@@ -99,6 +122,7 @@
         SJHomeCellModel *homeCellModel = [SJHomeCellModel mj_objectWithKeyValues:obj];
         [self.tableViewListArr addObject:homeCellModel];
     }];
+    [self.homeTableView reloadData];
     
     //模拟网路数据延迟
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -158,6 +182,20 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return kHomeCellH;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    SJHomeCellModel *model = [SJHomeCellModel mj_objectWithKeyValues:self.tableViewListArr[indexPath.row]];
+    if (model.type == 2) {
+        productType = DetailType_Zcb;
+    }else if (model.type == 4) {
+        productType = DetailType_Lcb;
+    }
+    
+    SJProductDetailViewController *productDetailsVC = [[SJProductDetailViewController alloc] initWithType:productType];
+    [self.navigationController pushViewController:productDetailsVC animated:YES];
 }
 
 

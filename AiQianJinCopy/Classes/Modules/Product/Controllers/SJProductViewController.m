@@ -14,6 +14,7 @@
 #import "SJZcbCellModel.h"
 #import "SJZcbCell.h"
 #import "SJZcbHeadView.h"
+#import "SJProductDetailViewController.h"
 
 #define kLcbJoinBtnTag          2345
 #define kLcbTopTouchBtnTag      9100
@@ -30,6 +31,9 @@
 static NSString * const identify = @"ZCBCELLIDENTIFY";
 
 @interface SJProductViewController ()<SJSlideTypeDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+{
+    DetailType currentType;
+}
 @property (nonatomic, strong) SJProductView     *productView;
 @property (nonatomic, strong) SJZcbHeadView     *zcbHeadView;
 
@@ -45,11 +49,13 @@ static NSString * const identify = @"ZCBCELLIDENTIFY";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    currentType = DetailType_Zcb;
     [self setUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [self getNetWorkData];
 }
 
@@ -62,6 +68,10 @@ static NSString * const identify = @"ZCBCELLIDENTIFY";
     _lcbModel = [SJLcbModel mj_objectWithKeyValues:lcbDic];
     _zcbModel = [SJZcbModel mj_objectWithKeyValues:zcbDic];
     _aytModel = [SJAytModel mj_objectWithKeyValues:aytDic];
+    
+    if (_cellArray && _cellArray.count > 0) {
+        [_cellArray removeAllObjects];
+    }
     
     //1.
     self.productView.LcbScrollView.lcbView.lcbModel = _lcbModel;
@@ -96,8 +106,12 @@ static NSString * const identify = @"ZCBCELLIDENTIFY";
 - (void)productTouch:(UIButton *)button {
     if (button.tag == kLcbProductDetailBtnTag) {
         Print(@"跳转Lcb详情");
+        SJProductDetailViewController *lcbDetailsVC = [[SJProductDetailViewController alloc] initWithType:DetailType_Lcb];
+        [self.navigationController pushViewController:lcbDetailsVC animated:YES];
     }else if (button.tag == kZcbProductDetailBtnTag) {
         Print(@"跳转Zcb详情");
+        SJProductDetailViewController *lcbDetailsVC = [[SJProductDetailViewController alloc] initWithType:DetailType_Zcb];
+        [self.navigationController pushViewController:lcbDetailsVC animated:YES];
     }else if (button.tag == kAytProductDetailBtnTag) {
         Print(@"跳转Ayt详情");
     }
