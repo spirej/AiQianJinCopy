@@ -32,6 +32,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *productDetailBtn;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLbH;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLbW;
 @property (weak, nonatomic) IBOutlet UIButton *safetyBtn;
 

@@ -38,6 +38,7 @@
 
 
 @property (nonatomic, copy) NSMutableArray      *bannerImgArr;
+@property (nonatomic, copy) NSMutableArray      *bannerArr;
 @property (nonatomic, copy) NSMutableArray      *tableViewListArr;
 @property (nonatomic, copy) NSMutableArray      *adsArr;
 
@@ -93,6 +94,7 @@
     [_homeModel.bannerList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //
         _bannerModel = [SJBannerModel mj_objectWithKeyValues:obj];
+        [self.bannerArr addObject:_bannerModel];
         [self.bannerImgArr addObject:_bannerModel.imgUrl];
     }];
     self.homeHeadView.bannerArr = self.bannerImgArr;
@@ -135,12 +137,9 @@
 //banner点击代理方法
 - (void)bannerDidSelectedAtIndex:(NSUInteger)index {
     Print(@"index - %ld", index);
-    
-    [[NetServiceManager shareInstance] jyPostPath:@"" params:nil delegate:self waitingAlert:nil success:^(id responseObject) {
-        //
-    } failure:^(NSError *error) {
-        //
-    }];
+    SJBannerModel *bModel = [SJBannerModel mj_objectWithKeyValues:self.bannerArr[index]];
+    SJCommonWebViewController *web = [[SJCommonWebViewController alloc] initWithUrl:bModel.detailUrl title:bModel.title autoFit:YES];
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 - (void)itemsDidSelectedAtIndex:(NSUInteger)index {
@@ -158,6 +157,9 @@
 
 - (void)safeExplain {
     Print(@"安全机制说明");
+    SJMenuItemModel *mModel = [SJMenuItemModel mj_objectWithKeyValues:self.safetyArr[1]];
+    SJCommonWebViewController *web = [[SJCommonWebViewController alloc] initWithUrl:mModel.detailUrl title:mModel.title autoFit:YES];
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 - (void)refresh {
@@ -237,6 +239,13 @@
         _bannerImgArr = [NSMutableArray array];
     }
     return _bannerImgArr;
+}
+
+- (NSMutableArray *)bannerArr {
+    if (_bannerArr == nil) {
+        _bannerArr = [NSMutableArray array];
+    }
+    return _bannerArr;
 }
 
 - (NSMutableArray *)tableViewListArr {

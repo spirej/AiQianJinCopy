@@ -245,6 +245,23 @@
  */
 + (NSString *)dateFormatter:(NSString *)format andLongDate:(NSString *)longDate;
 
+#pragma mark - 富文本处理
+//首页收益格式化
++(NSMutableAttributedString*)changeInvestText:(NSString*)text withUnitFont:(UIFont*)font;
+
+//改变字符串中数字的颜色
++ (NSMutableAttributedString *)changeNumberText:(NSString *)text;
+
+//锁定期显示格式化
++ (NSMutableAttributedString *)changeLockedText:(NSString *)text;
+
+//锁定期 如 ‘3个月’ 变色处理
++ (NSMutableAttributedString *)changeLockedText:(NSString *)text color:(UIColor *)color;
+
+//格式化金钱显示
++ (NSString *)numberFormatter:(NSString *)str;
+
+
 #pragma mark - 设备相关
 /**
  *  @author luohuichao, 16-02-25 14:02:11

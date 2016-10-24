@@ -19,7 +19,7 @@
 */
 
 - (void)awakeFromNib {
-    
+    [super awakeFromNib];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -42,8 +42,10 @@
     _titleLbW.constant = _titleLB.width + 30;
     _titleLB.layer.cornerRadius = 15;
     _titleLB.layer.masksToBounds = YES;
-    _titleLB.layer.borderColor = ColorWithHex(0x86FF42, 1).CGColor;
+    _titleLB.layer.borderColor = ColorWithHex(0x5CE8FF, 1).CGColor;
     _titleLB.layer.borderWidth = 0.5;
+    _titleLB.width = _titleLbW.constant;
+    _titleLB.height = _titleLbH.constant;
 
     
     _interestLB.text = [NSString stringWithFormat:@"%@+%@", [model.insterestList objectForKey:@"12"],model.awardInsterest] ;
@@ -53,11 +55,11 @@
     
     _periodLB.text = [NSString stringWithFormat:@"锁定期限%@", model.period];
     
-    _loopOneV.layer.cornerRadius = _loopOneV.width/2.0;
+    _loopOneV.layer.cornerRadius = 25;
     _loopOneV.layer.borderColor = ColorWithHex(0xff3936, 1).CGColor;
     _loopOneV.layer.borderWidth = 2.0;
     
-    _loopTwoV.layer.cornerRadius = _loopTwoV.width/2.0;
+    _loopTwoV.layer.cornerRadius = 25;
     _loopTwoV.layer.borderColor = ColorWithHex(0x7dc731, 1).CGColor;
     _loopTwoV.layer.borderWidth = 2.0;
     

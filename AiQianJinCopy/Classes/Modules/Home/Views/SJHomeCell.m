@@ -33,9 +33,11 @@
     //收益率提示
     self.insterestExplainLB.text = model.insterestExplain;
     //收益率
-    self.insterestLB.text = [NSString stringWithFormat:@"%.2f+%.2f",model.insterest.floatValue, model.awardInsterest.floatValue];
+    NSString *str = [NSString stringWithFormat:@"%.2f+%.2f",model.insterest.floatValue, model.awardInsterest.floatValue];
+    self.insterestLB.attributedText = [SJHelper changeInvestText:str withUnitFont:kFont15];
     //起投金额
-    self.limitAmountLB.text = [NSString stringWithFormat:@"%@%@%@",model.productExplain1, model.productAmount, model.amountUnit];
+    NSString *subStr = [NSString stringWithFormat:@"%@%@%@",model.productExplain1, model.productAmount, model.amountUnit];
+    self.limitAmountLB.attributedText = [SJHelper changeNumberText:subStr];
     //存取方式
     self.productStatusLB.text = model.productExplain2;
 }

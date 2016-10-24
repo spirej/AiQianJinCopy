@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.joinBtn.layer.cornerRadius = cornerR;
+    self.joinBtn.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -23,7 +25,7 @@
 
 - (void)setModel:(SJZcbCellModel *)model {
     _interestLB.text = [NSString stringWithFormat:@"%.2f",[model.maxInsterest floatValue]];
-    _lockedLB.text = [NSString stringWithFormat:@"%@个月",model.period];
+    _lockedLB.attributedText = [SJHelper changeLockedText:[NSString stringWithFormat:@"%@个月",model.period]];
     
     if (model.nowDateTime/1000 >= model.openDateTime/1000) {
         [_joinBtn setTitle:@"立即加入" forState:UIControlStateNormal];

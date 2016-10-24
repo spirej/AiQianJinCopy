@@ -26,6 +26,12 @@
     return self;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.joinBtn.layer.cornerRadius = cornerR;
+    self.joinBtn.layer.masksToBounds = YES;
+}
+
 - (void)setZcbModel:(SJZcbModel *)zcbModel {
     //安全保障图
     [_topIconView sd_setImageWithURL:[NSURL URLWithString:[zcbModel.safety objectForKey:@"imgUrl"]] placeholderImage:[UIImage imageNamed:@"banner_defaut_icon"]];
@@ -38,6 +44,8 @@
     _titleLB.layer.masksToBounds = YES;
     _titleLB.layer.borderColor = ColorWithHex(0x86FF42, 1).CGColor;
     _titleLB.layer.borderWidth = 0.5;
+    _titleLB.width = _titleLbW.constant;
+    _titleLB.height = _titleLbH.constant;
 }
 
 
@@ -53,8 +61,9 @@
         _interestLB.text = [NSString stringWithFormat:@"%.2f",[cellModel.maxInsterest floatValue]];
     }
     //起投
-    _minAmountLB.text = [NSString stringWithFormat:@"起投金额%@",cellModel.minAmount];
+    NSString *str = [SJHelper numberFormatter:cellModel.minAmount];
+    _minAmountLB.attributedText = [SJHelper changeNumberText:[NSString stringWithFormat:@"起投金额%@元",str]];
     //锁定期
-    _periodLB.text = [NSString stringWithFormat:@"锁定期%@个月",cellModel.period];
+    _periodLB.attributedText = [SJHelper changeLockedText:[NSString stringWithFormat:@"锁定期%@个月",cellModel.period] color:ColorWithHex(0xfc5455, 1)];
 }
 @end

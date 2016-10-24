@@ -9,7 +9,7 @@
 #import "SJProductView.h"
 
 #define kSlideTypeHeadViewH     64
-#define kSlideTypeTitles         @[@"零存宝", @"整存宝",@"爱月投"]
+#define kSlideTypeTitles         @[@"零存宝+", @"整存宝+",@"爱月投"]
 
 
 @implementation SJProductView

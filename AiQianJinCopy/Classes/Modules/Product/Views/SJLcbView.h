@@ -34,6 +34,9 @@
 @property (weak, nonatomic) IBOutlet UIView *listLoopTwo;
 @property (weak, nonatomic) IBOutlet UIView *listLoopThree;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLbH;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLbW;
+
 @property (nonatomic, strong) SJLcbModel *lcbModel;
 
 @end

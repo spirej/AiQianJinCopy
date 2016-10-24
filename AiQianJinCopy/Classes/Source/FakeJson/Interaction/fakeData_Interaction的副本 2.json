@@ -1,0 +1,111 @@
+ {
+    "cashPassword" : -1,
+    "email" : "",
+    "emailVerified" : -1,
+    "idNo" : "",
+    "idVerified" : -1,
+    "integral" : -1,
+    "interactionList" : [
+      {
+        "actiEndTime" : 1473091185000,
+        "actiStartTime" : 1471954063000,
+        "detailUrl" : "https://m.iqianjin.com/html/bbsync.html?redirect=http://bbs.iqianjin.com/forum.php?mod=viewthread&tid=37020&page=1",
+        "explain" : "“爱钱进官方服务平台”送红包啦！",
+        "iconUrl" : "https://news.iqianjin.com/news/u/cms/www/201608/23195252plu2.png",
+        "recommendIcon" : "",
+        "shareContent" : "关注“爱钱进官方服务平台”，咨询问题秒回哦~",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201608/23200627wey2.jpg",
+        "title" : "爱钱进官方服务平台 送红包啦！",
+        "type" : 1
+      },
+      {
+        "actiEndTime" : 0,
+        "actiStartTime" : 1469764322000,
+        "detailUrl" : "https://m.iqianjin.com/html/bbsync.html?redirect=http://bbs.iqianjin.com/forum.php?mod=viewthread&tid=30561",
+        "explain" : "前往小爱论坛，学知识赚积分，积分可兑换各种好礼",
+        "iconUrl" : "",
+        "recommendIcon" : "",
+        "shareContent" : "前往小爱论坛，学知识赚积分，积分可兑换各种好礼",
+        "title" : "【小课堂】为什么零存宝的利率是浮动的？",
+        "type" : 2
+      },
+      {
+        "actiEndTime" : 0,
+        "actiStartTime" : 0,
+        "detailUrl" : "http://m.iqianjin.com/activity/wangcaizhu_v2/index.jsp?source=hudong",
+        "explain" : "连喂五天还能加息翻倍",
+        "iconUrl" : "",
+        "recommendIcon" : "",
+        "shareContent" : "连喂五天还能加息翻倍",
+        "title" : "旺财小猪，天天加息",
+        "type" : 2
+      },
+      {
+        "actiEndTime" : 1483199999000,
+        "actiStartTime" : 1469980800000,
+        "detailUrl" : "http://m.iqianjin.com/act/20160801/index.jsp",
+        "explain" : "连续每月投资领现金红包奖励!",
+        "iconUrl" : "https://news.iqianjin.com/news/u/cms/www/201607/31201425zg1w.jpg",
+        "recommendIcon" : "",
+        "shareContent" : "收益“升值记”等你来翻倍,连续每月投资领现金红包奖励!",
+        "title" : "收益“升值记”等你来翻倍",
+        "type" : 2
+      },
+      {
+        "actiEndTime" : 0,
+        "actiStartTime" : 0,
+        "detailUrl" : "https://m.iqianjin.com/activity/finance_survey_0420.jsp",
+        "explain" : "1分钟了解自己的投资风格",
+        "iconUrl" : "",
+        "recommendIcon" : "",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201604/121724434ol3.png",
+        "title" : "爱钱进理财小测试",
+        "type" : 2
+      }
+    ],
+    "investPermission" : -1,
+    "inviteStatus" : -1,
+    "isBuyPlan" : -1,
+    "member" : {
+      "level" : 1,
+      "levelImg" : "http://v1.iqianjin.com/testfile/icon1_new_user.png",
+      "levelUrl" : "https://m.iqianjin.com/member/index.jsp?source=hudong"
+    },
+    "mobile" : "186****6883",
+    "nickname" : "aiqj_5598d5d7d8",
+    "operateInfo" : [
+      {
+        "detailUrl" : "https://m.iqianjin.com/member/index.jsp?source=hudong",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201605/2411083218fq.png",
+        "shareContent" : "快来看看你在爱钱进是什么级别？超值好礼在等你哦！",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201605/242001291sy3.jpg",
+        "shareTitle" : "6月会员特权红包有更新哦，赶快来查看你的特权吧！",
+        "shareUrl" : "https://m.iqianjin.com/member/index.jsp?source=hudong",
+        "title" : "会员体系"
+      },
+      {
+        "detailUrl" : "https://m.iqianjin.com/invite/share.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201605/24111251tyad.png",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201605/24185441s2ow.png",
+        "shareTitle" : "送你1088元新手大礼包，跟我一起在爱钱进理财吧",
+        "shareUrl" : "https://m.iqianjin.com/invite/share.jsp",
+        "title" : "邀请有礼"
+      },
+      {
+        "detailUrl" : "http://m.iqianjin.com/service/media.jsp",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201606/13185723zqk7.png",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201606/13185446kr8r.png",
+        "shareUrl" : "http://m.iqianjin.com/service/media.jsp",
+        "title" : "行业发声"
+      },
+      {
+        "detailUrl" : "https://m.iqianjin.com/html/bbsync.html?=muzi",
+        "imgUrl" : "https://news.iqianjin.com/news/u/cms/www/201606/21161559hdbg.png",
+        "shareContent" : "问问题 提建议 论坛积分还可以兑换红包哦",
+        "shareIcon" : "https://news.iqianjin.com/news/u/cms/www/201605/24184225qx77.jpg",
+        "shareTitle" : "爱钱进社区",
+        "shareUrl" : "https://m.iqianjin.com/html/bbsync.html?=muzi",
+        "title" : "社区"
+      }
+    ]
+  }

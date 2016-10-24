@@ -194,6 +194,117 @@
     return currentDateStr;
 }
 
+//富文本
++(NSMutableAttributedString*)changeInvestText:(NSString*)text withUnitFont:(UIFont*)font
+{
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    if ([text rangeOfString:@"+"].location !=NSNotFound) {
+        NSRange range = [text rangeOfString:@"+"];
+        NSRange subRange = NSMakeRange(range.location, text.length-range.location);
+        [str addAttribute:NSFontAttributeName value:font range:subRange];
+    }
+    return str;
+}
+
++ (NSMutableAttributedString *)changeNumberText:(NSString *)text {
+    NSMutableArray *arrayA = [NSMutableArray array];
+    NSMutableArray *arrayB = [NSMutableArray array];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    //遍历找出所有的数字的位置
+    unichar c = 0;
+    for (int i=0; i<text.length; i++) {
+        c=[text characterAtIndex:i];
+        if (isdigit(c)) {
+            [arrayA addObject:[NSNumber numberWithInt:i]];
+        }
+    }
+    
+    [arrayA enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSRange tempRange = NSMakeRange([obj integerValue], 1);
+        [str addAttribute:NSForegroundColorAttributeName value:ColorWithHex(0xfc5455, 1) range:tempRange];
+    }];
+    
+    //遍历找出所有逗号的位置
+    if ([text rangeOfString:@","].location != NSNotFound) {
+        unichar b;
+        for (int i = 0; i < text.length; i++) {
+            b = [text characterAtIndex:i];
+            if (b == ',') {
+                [arrayB addObject:[NSNumber numberWithChar:i]];
+            }
+        }
+    }
+    [arrayB enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSRange tempRange = NSMakeRange([obj integerValue], 1);
+        [str addAttribute:NSForegroundColorAttributeName value:ColorWithHex(0xfc5455, 1) range:tempRange];
+    }];
+    
+    if ([text rangeOfString:@"元"].location != NSNotFound) {
+        NSRange range = [text rangeOfString:@"元"];
+        [str addAttribute:NSForegroundColorAttributeName value:ColorWithHex(0xfc5455, 1) range:range];
+    }
+    return str;
+}
+
++ (NSMutableAttributedString *)changeLockedText:(NSString *)text {
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    if ([text rangeOfString:@"个月"].location != NSNotFound) {
+        NSRange range = [text rangeOfString:@"个月"];
+        [str addAttribute:NSFontAttributeName value:kFont15 range:range];
+        [str addAttribute:NSForegroundColorAttributeName value:kDetailGrayColor range:range];
+    }
+    return str;
+}
+
++ (NSMutableAttributedString *)changeLockedText:(NSString *)text color:(UIColor *)color {
+    NSMutableArray *arrayA = [NSMutableArray array];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    //遍历找出所有的数字的位置
+    unichar c = 0;
+    for (int i=0; i<text.length; i++) {
+        c=[text characterAtIndex:i];
+        if (isdigit(c)) {
+            [arrayA addObject:[NSNumber numberWithInt:i]];
+        }
+    }
+    
+    [arrayA enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSRange tempRange = NSMakeRange([obj integerValue], 1);
+        [str addAttribute:NSForegroundColorAttributeName value:ColorWithHex(0xfc5455, 1) range:tempRange];
+    }];
+    
+    if ([text rangeOfString:@"个月"].location != NSNotFound) {
+        NSRange range = [text rangeOfString:@"个月"];
+        [str addAttribute:NSFontAttributeName value:kFont15 range:range];
+        [str addAttribute:NSForegroundColorAttributeName value:color range:range];
+    }
+    return str;
+}
+
++ (NSString *)numberFormatter:(id)number {
+    NSString *numString;
+    if ([number isKindOfClass:[NSNumber class]]) {
+        numString = [NSString stringWithFormat:@"%lf",[number doubleValue]];
+    }else{
+        numString = (NSString *)number;
+    }
+    
+    numString = [NSString stringWithFormat:@"%lf",[numString doubleValue]];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+//    [formatter setMaximumFractionDigits:2];
+//    [formatter setMinimumFractionDigits:2];
+    
+    NSNumber *num = [NSNumber numberWithDouble:[numString doubleValue]];
+    NSString *result = [NSString stringWithFormat:@"%@",[formatter stringFromNumber:num]];
+    
+    return  result;
+}
+
+
+
 //------------------------------------------------------------------------------------------------//
 
 + (NSString *)obtainDeviceIDFA

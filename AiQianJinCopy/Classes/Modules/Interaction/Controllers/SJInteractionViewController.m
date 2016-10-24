@@ -17,6 +17,8 @@
 #import "SJInteractionModel.h"
 #import "SJInteractionCellModel.h"
 
+#import "SJRegistView.h"
+
 #define kHeadViewH          235
 #define kInteractionCellH   176
 #define kCellImageH         100
@@ -101,7 +103,14 @@ static NSString *const identify = @"INTERACTIONCELL";
 #pragma mark - Action
 - (void)information:(UITapGestureRecognizer *)tap {
     Print(@"个人信息");
-    [SJHelper normalPushWithPage:NSStringFromClass([SJMineInformationViewController class]) target:self];
+    
+    SJRegistView *registView = [[SJRegistView alloc] init];
+    [self.navigationController.view addSubview:registView];
+    [UIView animateWithDuration:0.2 animations:^{
+        registView.frame = CGRectMake(0, 0, kDeviceWidth, KDeviceHeight);
+    }];
+    
+//    [SJHelper normalPushWithPage:NSStringFromClass([SJMineInformationViewController class]) target:self];
 }
 
 - (void)setting {
