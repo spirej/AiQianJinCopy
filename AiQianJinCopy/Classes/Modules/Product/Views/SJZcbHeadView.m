@@ -56,7 +56,7 @@
     }
     //收益
     if ([cellModel.awardInsterest integerValue] > 0) {
-        _interestLB.text = [NSString stringWithFormat:@"%.2f+%.2f",[cellModel.maxInsterest floatValue], [cellModel.awardInsterest floatValue]];
+        _interestLB.attributedText = [SJHelper changeInvestText:[NSString stringWithFormat:@"%.2f+%.2f",[cellModel.maxInsterest floatValue], [cellModel.awardInsterest floatValue]] withUnitFont:kFont18];
     }else {
         _interestLB.text = [NSString stringWithFormat:@"%.2f",[cellModel.maxInsterest floatValue]];
     }

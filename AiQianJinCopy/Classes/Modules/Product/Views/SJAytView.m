@@ -20,6 +20,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    self.joinBtn.layer.cornerRadius = cornerR;
+    self.joinBtn.layer.masksToBounds = YES;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -48,10 +51,11 @@
     _titleLB.height = _titleLbH.constant;
 
     
-    _interestLB.text = [NSString stringWithFormat:@"%@+%@", [model.insterestList objectForKey:@"12"],model.awardInsterest] ;
+    _interestLB.attributedText = [SJHelper changeInvestText:[NSString stringWithFormat:@"%.2f+%.2f", [[model.insterestList objectForKey:@"12"] floatValue],[model.awardInsterest floatValue]] withUnitFont:kFont18];
     
     
-    _minAmountLB.text = [NSString stringWithFormat:@"起投金额%@元", model.singleMin];
+    NSString *str = [SJHelper numberFormatter:model.singleMin];
+    _minAmountLB.attributedText = [SJHelper changeNumberText:[NSString stringWithFormat:@"起投金额%@元", str]];
     
     _periodLB.text = [NSString stringWithFormat:@"锁定期限%@", model.period];
     
