@@ -17,6 +17,11 @@
 #define kJoinViewHeight         100
 #define kDetailsViewH           485
 
+#define kListViewATag           10001
+#define kListViewBTag           10002
+#define kListViewCTag           10003
+#define kListViewDTag           10004
+
 @interface SJProductDetailViewController ()
 {
     DetailType currentType;
@@ -76,11 +81,31 @@
         _lcbDetailsView.zcbModel = _zcbModel;
         _zcbCalculView.model = _zcbModel;
     }
+    
+    //剩余金额
+    NSString *str = [SJHelper numberFormatter:currentType == DetailType_Lcb? _lcbModel.overAmount:_zcbModel.overAmount];
+    _joinView.surplusAmountLB.attributedText = [SJHelper changeNumberText:[NSString stringWithFormat:@"当前剩余金额 %@元",str]];
 }
 
 #pragma mark - Action
 - (void)lcbCalcul:(UIButton *)button {
     Print(@"计算");
+}
+
+- (void)upIncome {
+    Print(@"提升收益");
+}
+
+- (void)listTouch:(UITapGestureRecognizer *)tap {
+    if (tap.view.tag == kListViewATag) {
+        Print(@"协议范本");
+    }else if (tap.view.tag == kListViewBTag) {
+        Print(@"计划详情");
+    }else if (tap.view.tag == kListViewCTag) {
+        Print(@"标的组成");
+    }else if (tap.view.tag == kListViewDTag) {
+        Print(@"投资记录");
+    }
 }
 
 #pragma mark - setter & getter
@@ -106,6 +131,20 @@
         }else if (currentType == DetailType_Zcb) {
             [_lcbDetailsView.calculView addSubview:self.zcbCalculView];
         }
+        
+        UITapGestureRecognizer *tapGestureA = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(listTouch:)];
+        UITapGestureRecognizer *tapGestureB = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(listTouch:)];
+        UITapGestureRecognizer *tapGestureC = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(listTouch:)];
+        UITapGestureRecognizer *tapGestureD = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(listTouch:)];
+        _lcbDetailsView.listViewA.tag = kListViewATag;
+        _lcbDetailsView.listViewB.tag = kListViewBTag;
+        _lcbDetailsView.listViewC.tag = kListViewCTag;
+        _lcbDetailsView.listViewD.tag = kListViewDTag;
+        [_lcbDetailsView.listViewA addGestureRecognizer:tapGestureA];
+        [_lcbDetailsView.listViewB addGestureRecognizer:tapGestureB];
+        [_lcbDetailsView.listViewC addGestureRecognizer:tapGestureC];
+        [_lcbDetailsView.listViewD addGestureRecognizer:tapGestureD];
+        
     }
     return _lcbDetailsView;
 }
@@ -114,6 +153,7 @@
     if (_lcbCalculView == nil) {
         _lcbCalculView = [[SJLcbCalculView alloc] init];
         [_lcbCalculView.calculBtn addTarget:self action:@selector(lcbCalcul:) forControlEvents:UIControlEventTouchUpInside];
+        [_lcbCalculView.upInComeBtn addTarget:self action:@selector(upIncome) forControlEvents:UIControlEventTouchUpInside];
     }
     return _lcbCalculView;
 }

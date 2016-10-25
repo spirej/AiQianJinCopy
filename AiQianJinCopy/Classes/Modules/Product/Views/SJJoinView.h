@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SJJoinView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *surplusAmountLB;
+@property (weak, nonatomic) IBOutlet UIButton *joinBtn;
 
 @end

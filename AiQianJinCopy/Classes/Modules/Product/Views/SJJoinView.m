@@ -17,5 +17,10 @@
     // Drawing code
 }
 */
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.joinBtn.layer.cornerRadius = cornerR;
+    self.joinBtn.layer.masksToBounds = YES;
+}
 
 @end

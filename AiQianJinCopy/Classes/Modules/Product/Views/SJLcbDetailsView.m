@@ -8,6 +8,8 @@
 
 #import "SJLcbDetailsView.h"
 
+#define kTimeCornR  15
+
 @implementation SJLcbDetailsView
 
 /*
@@ -18,14 +20,15 @@
 }
 */
 - (void)awakeFromNib {
-    _timeOneV.layer.cornerRadius = _timeOneV.width/2.0;
-    _timeTwoV.layer.cornerRadius = _timeTwoV.width/2.0;
-    _timeThreeV.layer.cornerRadius = _timeThreeV.width/2.0;
+    [super awakeFromNib];
+    _timeOneV.layer.cornerRadius = kTimeCornR;
+    _timeTwoV.layer.cornerRadius = kTimeCornR;
+    _timeThreeV.layer.cornerRadius = kTimeCornR;
     
-    _listOneV.layer.cornerRadius = _listOneV.width/2.0;
-    _listTwoV.layer.cornerRadius = _listTwoV.width/2.0;
-    _listThreeV.layer.cornerRadius = _listThreeV.width/2.0;
-    _listFourV.layer.cornerRadius = _listFourV.width/2.0;
+    _xulineOneH.constant = 1;
+    _xuLineTwoH.constant = 1;
+    
+    _calculViewH.constant = 100;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -43,9 +46,9 @@
     _interestTipLB.text = model.insterestExplain;
     
     if ([model.awardInsterest doubleValue] > 0) {
-        _interestLB.text = [NSString stringWithFormat:@"%@+%@",model.insterest, model.awardInsterest];
+        _interestLB.attributedText = [SJHelper changeInvestText:[NSString stringWithFormat:@"%.2f+%.2f",[model.insterest floatValue], [model.awardInsterest floatValue]] withUnitFont:kFont18];
     }else {
-        _interestLB.text = model.insterest;
+        _interestLB.text = [NSString stringWithFormat:@"%.2f",[model.insterest floatValue]];
     }
     
     if ([SJHelper stringValid:model.iconUrl]) {
@@ -66,9 +69,9 @@
     _interestTipLB.text = [NSString stringWithFormat:@"%@%@", zcbModel.period, zcbModel.insterestExplain];
     
     if ([zcbModel.awardInsterest doubleValue] > 0) {
-        _interestLB.text = [NSString stringWithFormat:@"%@+%@",zcbModel.insterest, zcbModel.awardInsterest];
+        _interestLB.attributedText = [SJHelper changeInvestText:[NSString stringWithFormat:@"%.2f+%.2f",[zcbModel.insterest floatValue], [zcbModel.awardInsterest floatValue]] withUnitFont:kFont18];
     }else {
-        _interestLB.text = zcbModel.insterest;
+        _interestLB.text = [NSString stringWithFormat:@"%.2f",[zcbModel.insterest floatValue]];
     }
     
     if ([SJHelper stringValid:zcbModel.iconUrl]) {

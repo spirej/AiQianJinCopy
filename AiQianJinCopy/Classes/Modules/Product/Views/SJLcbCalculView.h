@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *incomeLB;
 @property (weak, nonatomic) IBOutlet UIImageView *iconTipView;
 @property (weak, nonatomic) IBOutlet UIButton *calculBtn;
+@property (weak, nonatomic) IBOutlet UIButton *upInComeBtn;
 
 @property (nonatomic, strong) SJLcbDetailsModel *model;
 
