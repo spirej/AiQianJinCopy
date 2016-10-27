@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "SJTabBarViewController.h"
 #import "SJNavigationController.h"
+#import "SJLaunchViewController.h"
+#import "SJWelcomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +22,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    SJLaunchViewController *launchVC = [SJLaunchViewController new];
+    self.window.rootViewController = launchVC;
+    launchVC.FinishLaunch = ^(){
+        [self goIntoApp];
+    };
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+- (void)goIntoApp {
+    //
+    self.window.rootViewController = [[SJWelcomeViewController alloc] init];
+}
+
+- (void)setHomeRootViewController {
     SJTabBarViewController *tabbarVC = [[SJTabBarViewController alloc] init];
     SJNavigationController *nav = [[SJNavigationController alloc] initWithRootViewController:tabbarVC];
     self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

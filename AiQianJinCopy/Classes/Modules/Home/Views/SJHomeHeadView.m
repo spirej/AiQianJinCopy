@@ -94,7 +94,6 @@
         make.top.mas_equalTo(self.bannerView.mas_bottom).offset(0);
         make.height.mas_equalTo(@(kAdsBarH));
     }];
-
 }
 
 - (void)setMenuItemTitleArr:(NSArray *)menuItemTitleArr {

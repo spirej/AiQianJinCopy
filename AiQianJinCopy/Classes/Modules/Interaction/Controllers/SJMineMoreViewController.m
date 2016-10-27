@@ -37,7 +37,7 @@
 }
 
 - (void)logOut {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"确定要退出爱钱进吗？" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"呼叫", nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"确定要退出爱钱进吗？" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"退出", nil];
     [alertView show];
 }
 
