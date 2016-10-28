@@ -19,6 +19,7 @@
 #define kTabbarNumberOfItems    4
 
 #define kNetWorkErrorDomain         @"jieyuelicaiError"
+#define kIsFirstUserApp             @"FirstTimeUserApp"    
 
 /**
  *  日志输出

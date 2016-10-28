@@ -34,7 +34,11 @@
 
 - (void)goIntoApp {
     //
-    self.window.rootViewController = [[SJWelcomeViewController alloc] init];
+    if ([SJHelper isFirstUserApp]) {
+        self.window.rootViewController = [[SJWelcomeViewController alloc] init];
+    }else {
+        [self setHomeRootViewController];
+    }
 }
 
 - (void)setHomeRootViewController {

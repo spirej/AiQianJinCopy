@@ -172,6 +172,19 @@
     }
 }
 
++ (BOOL)isFirstUserApp {
+    id flag = [[NSUserDefaults standardUserDefaults] objectForKey:kIsFirstUserApp];
+    if (flag == nil) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
++ (void)setUsed {
+    [[NSUserDefaults standardUserDefaults] setObject:@"Yes" forKey:kIsFirstUserApp];
+}
+
 
 + (id)readLocalFileResource:(NSString *)resource type:(NSString *)type
 {

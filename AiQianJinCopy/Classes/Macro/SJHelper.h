@@ -221,6 +221,10 @@
  */
 + (BOOL)stringValid:(NSString *)str;
 
++ (BOOL)isFirstUserApp;
+
++ (void)setUsed;
+
 /**
  *  @author fushengjun, 16-09-06 10:09:16
  *

@@ -48,6 +48,7 @@
 #pragma mark - Actions
 - (void)startAction:(UIButton *)btn {
     //
+    [SJHelper setUsed];
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [delegate setHomeRootViewController];
 }
